@@ -333,8 +333,7 @@ public final class Tx {
           .equals(other.getFeeder())) return false;
       if (!getValidator()
           .equals(other.getValidator())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1015,8 +1014,7 @@ public final class Tx {
       }
       terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse other = (terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1702,8 +1700,7 @@ public final class Tx {
           .equals(other.getFeeder())) return false;
       if (!getValidator()
           .equals(other.getValidator())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2469,8 +2466,7 @@ public final class Tx {
       }
       terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse other = (terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3026,8 +3022,7 @@ public final class Tx {
           .equals(other.getOperator())) return false;
       if (!getDelegate()
           .equals(other.getDelegate())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3623,8 +3618,7 @@ public final class Tx {
       }
       terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse other = (terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3969,13 +3963,13 @@ public final class Tx {
       "racle.v1beta1\032\024gogoproto/gogo.proto\"\226\001\n\037" +
       "MsgAggregateExchangeRatePrevote\022\035\n\004hash\030" +
       "\001 \001(\tB\017\362\336\037\013yaml:\"hash\"\022!\n\006feeder\030\002 \001(\tB\021" +
-      "\362\336\037\ryaml:\"feeder\"\022\'\n\tvalidator\030\003 \001(\tB\024\362\336" +
-      "\037\020yaml:\"validator\":\010\350\240\037\000\210\240\037\000\")\n\'MsgAggre" +
+              "\362\336\037\ryaml:\"feeder\"\022'\n\tvalidator\030\003 \001(\tB\024\362\336" +
+              "\037\020yaml:\"validator\":\010\350\240\037\000\210\240\037\000\")\n'MsgAggre" +
       "gateExchangeRatePrevoteResponse\"\306\001\n\034MsgA" +
       "ggregateExchangeRateVote\022\035\n\004salt\030\001 \001(\tB\017" +
       "\362\336\037\013yaml:\"salt\"\0221\n\016exchange_rates\030\002 \001(\tB" +
       "\031\362\336\037\025yaml:\"exchange_rates\"\022!\n\006feeder\030\003 \001" +
-      "(\tB\021\362\336\037\ryaml:\"feeder\"\022\'\n\tvalidator\030\004 \001(\t" +
+              "(\tB\021\362\336\037\ryaml:\"feeder\"\022'\n\tvalidator\030\004 \001(\t" +
       "B\024\362\336\037\020yaml:\"validator\":\010\350\240\037\000\210\240\037\000\"&\n$MsgA" +
       "ggregateExchangeRateVoteResponse\"p\n\026MsgD" +
       "elegateFeedConsent\022%\n\010operator\030\001 \001(\tB\023\362\336" +

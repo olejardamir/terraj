@@ -186,7 +186,7 @@ public final class Oracle {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 whitelist_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -577,8 +577,7 @@ public final class Oracle {
           != other.getSlashWindow()) return false;
       if (!getMinValidPerWindow()
           .equals(other.getMinValidPerWindow())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1156,7 +1155,7 @@ public final class Oracle {
       private java.util.List<terra.oracle.v1beta1.Oracle.Denom> whitelist_ =
         java.util.Collections.emptyList();
       private void ensureWhitelistIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           whitelist_ = new java.util.ArrayList<>(whitelist_);
           bitField0_ |= 0x00000001;
          }
@@ -1880,8 +1879,7 @@ public final class Oracle {
           .equals(other.getName())) return false;
       if (!getTobinTax()
           .equals(other.getTobinTax())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2639,8 +2637,7 @@ public final class Oracle {
           .equals(other.getVoter())) return false;
       if (getSubmitBlock()
           != other.getSubmitBlock()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3248,7 +3245,7 @@ public final class Oracle {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 exchangeRateTuples_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -3430,8 +3427,7 @@ public final class Oracle {
           .equals(other.getExchangeRateTuplesList())) return false;
       if (!getVoter()
           .equals(other.getVoter())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3742,7 +3738,7 @@ public final class Oracle {
       private java.util.List<terra.oracle.v1beta1.Oracle.ExchangeRateTuple> exchangeRateTuples_ =
         java.util.Collections.emptyList();
       private void ensureExchangeRateTuplesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           exchangeRateTuples_ = new java.util.ArrayList<>(exchangeRateTuples_);
           bitField0_ |= 0x00000001;
          }
@@ -4359,8 +4355,7 @@ public final class Oracle {
           .equals(other.getDenom())) return false;
       if (!getExchangeRate()
           .equals(other.getExchangeRate())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4894,7 +4889,7 @@ public final class Oracle {
       "\tB\020\362\336\037\014yaml:\"voter\"\022-\n\014submit_block\030\003 \001(" +
       "\004B\027\362\336\037\023yaml:\"submit_block\":\014\350\240\037\000\210\240\037\000\230\240\037\000" +
       "\"\315\001\n\031AggregateExchangeRateVote\022\200\001\n\024excha" +
-      "nge_rate_tuples\030\001 \003(\0132\'.terra.oracle.v1b" +
+              "nge_rate_tuples\030\001 \003(\0132'.terra.oracle.v1b" +
       "eta1.ExchangeRateTupleB9\362\336\037\033yaml:\"exchan" +
       "ge_rate_tuples\"\252\337\037\022ExchangeRateTuples\310\336\037" +
       "\000\022\037\n\005voter\030\002 \001(\tB\020\362\336\037\014yaml:\"voter\":\014\350\240\037\000" +

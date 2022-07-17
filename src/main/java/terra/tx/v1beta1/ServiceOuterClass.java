@@ -228,8 +228,7 @@ public final class ServiceOuterClass {
         if (!getTx()
             .equals(other.getTx())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -805,7 +804,7 @@ public final class ServiceOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 taxAmount_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -955,8 +954,7 @@ public final class ServiceOuterClass {
 
       if (!getTaxAmountList()
           .equals(other.getTaxAmountList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1258,7 +1256,7 @@ public final class ServiceOuterClass {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> taxAmount_ =
         java.util.Collections.emptyList();
       private void ensureTaxAmountIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           taxAmount_ = new java.util.ArrayList<>(taxAmount_);
           bitField0_ |= 0x00000001;
          }

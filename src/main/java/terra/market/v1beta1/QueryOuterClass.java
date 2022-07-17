@@ -299,8 +299,7 @@ public final class QueryOuterClass {
           .equals(other.getOfferCoin())) return false;
       if (!getAskDenom()
           .equals(other.getAskDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1025,8 +1024,7 @@ public final class QueryOuterClass {
         if (!getReturnCoin()
             .equals(other.getReturnCoin())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1623,8 +1621,7 @@ public final class QueryOuterClass {
       }
       terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest other = (terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2089,8 +2086,7 @@ public final class QueryOuterClass {
 
       if (!getTerraPoolDelta()
           .equals(other.getTerraPoolDelta())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2569,8 +2565,7 @@ public final class QueryOuterClass {
       }
       terra.market.v1beta1.QueryOuterClass.QueryParamsRequest other = (terra.market.v1beta1.QueryOuterClass.QueryParamsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3085,8 +3080,7 @@ public final class QueryOuterClass {
         if (!getParams()
             .equals(other.getParams())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3614,7 +3608,7 @@ public final class QueryOuterClass {
       "QueryParamsResponse\0222\n\006params\030\001 \001(\0132\034.te" +
       "rra.market.v1beta1.ParamsB\004\310\336\037\0002\262\003\n\005Quer" +
       "y\022{\n\004Swap\022&.terra.market.v1beta1.QuerySw" +
-      "apRequest\032\'.terra.market.v1beta1.QuerySw" +
+              "apRequest\032'.terra.market.v1beta1.QuerySw" +
       "apResponse\"\"\202\323\344\223\002\034\022\032/terra/market/v1beta" +
       "1/swap\022\245\001\n\016TerraPoolDelta\0220.terra.market" +
       ".v1beta1.QueryTerraPoolDeltaRequest\0321.te" +

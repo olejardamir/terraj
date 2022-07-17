@@ -176,8 +176,7 @@ public final class QueryOuterClass {
 
       if (getCodeId()
           != other.getCodeId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -721,8 +720,7 @@ public final class QueryOuterClass {
         if (!getCodeInfo()
             .equals(other.getCodeInfo())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1323,8 +1321,7 @@ public final class QueryOuterClass {
 
       if (getCodeId()
           != other.getCodeId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1834,8 +1831,7 @@ public final class QueryOuterClass {
 
       if (!getByteCode()
           .equals(other.getByteCode())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2368,8 +2364,7 @@ public final class QueryOuterClass {
 
       if (!getContractAddress()
           .equals(other.getContractAddress())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2946,8 +2941,7 @@ public final class QueryOuterClass {
         if (!getContractInfo()
             .equals(other.getContractInfo())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3606,8 +3600,7 @@ public final class QueryOuterClass {
           .equals(other.getContractAddress())) return false;
       if (!getQueryMsg()
           .equals(other.getQueryMsg())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4192,8 +4185,7 @@ public final class QueryOuterClass {
 
       if (!getQueryResult()
           .equals(other.getQueryResult())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4758,8 +4750,7 @@ public final class QueryOuterClass {
           .equals(other.getContractAddress())) return false;
       if (!getKey()
           .equals(other.getKey())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5352,8 +5343,7 @@ public final class QueryOuterClass {
 
       if (!getData()
           .equals(other.getData())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5833,8 +5823,7 @@ public final class QueryOuterClass {
       }
       terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest other = (terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6349,8 +6338,7 @@ public final class QueryOuterClass {
         if (!getParams()
             .equals(other.getParams())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6938,7 +6926,7 @@ public final class QueryOuterClass {
       "ueryRawStoreResponse\"A\202\323\344\223\002;\0229/terra/was" +
       "m/v1beta1/contract/{contract_address}/st" +
       "ore/raw\022}\n\006Params\022&.terra.wasm.v1beta1.Q" +
-      "ueryParamsRequest\032\'.terra.wasm.v1beta1.Q" +
+              "ueryParamsRequest\032'.terra.wasm.v1beta1.Q" +
       "ueryParamsResponse\"\"\202\323\344\223\002\034\022\032/terra/wasm/" +
       "v1beta1/paramsB*Z(github.com/terra-rebels" +
       "/core/x/wasm/typesb\006proto3"

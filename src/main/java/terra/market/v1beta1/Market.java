@@ -232,8 +232,7 @@ public final class Market {
           != other.getPoolRecoveryPeriod()) return false;
       if (!getMinStabilitySpread()
           .equals(other.getMinStabilitySpread())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+        return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override

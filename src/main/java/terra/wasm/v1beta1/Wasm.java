@@ -230,8 +230,7 @@ public final class Wasm {
           != other.getMaxContractGas()) return false;
       if (getMaxContractMsgSize()
           != other.getMaxContractMsgSize()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -936,8 +935,7 @@ public final class Wasm {
           .equals(other.getCodeHash())) return false;
       if (!getCreator()
           .equals(other.getCreator())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1895,8 +1893,7 @@ public final class Wasm {
           != other.getCodeId()) return false;
       if (!getInitMsg()
           .equals(other.getInitMsg())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2652,7 +2649,7 @@ public final class Wasm {
       "ract_msg_size\030\003 \001(\004B \362\336\037\034yaml:\"max_contr" +
       "act_msg_size\":\010\350\240\037\001\230\240\037\000\"\207\001\n\010CodeInfo\022-\n\007" +
       "code_id\030\001 \001(\004B\034\362\336\037\016yaml:\"code_id\"\342\336\037\006Cod" +
-      "eID\022\'\n\tcode_hash\030\002 \001(\014B\024\362\336\037\020yaml:\"code_h" +
+              "eID\022'\n\tcode_hash\030\002 \001(\014B\024\362\336\037\020yaml:\"code_h" +
       "ash\"\022#\n\007creator\030\003 \001(\tB\022\362\336\037\016yaml:\"creator" +
       "\"\"\361\001\n\014ContractInfo\022#\n\007address\030\001 \001(\tB\022\362\336\037" +
       "\016yaml:\"address\"\022#\n\007creator\030\002 \001(\tB\022\362\336\037\016ya" +

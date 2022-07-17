@@ -247,7 +247,7 @@ public final class Genesis {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 feederDelegations_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -256,7 +256,7 @@ public final class Genesis {
               break;
             }
             case 26: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if ((mutable_bitField0_ & 0x00000002) == 0) {
                 exchangeRates_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
@@ -265,7 +265,7 @@ public final class Genesis {
               break;
             }
             case 34: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if ((mutable_bitField0_ & 0x00000004) == 0) {
                 missCounters_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000004;
               }
@@ -274,7 +274,7 @@ public final class Genesis {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if ((mutable_bitField0_ & 0x00000008) == 0) {
                 aggregateExchangeRatePrevotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000008;
               }
@@ -283,7 +283,7 @@ public final class Genesis {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+              if ((mutable_bitField0_ & 0x00000010) == 0) {
                 aggregateExchangeRateVotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000010;
               }
@@ -292,7 +292,7 @@ public final class Genesis {
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+              if ((mutable_bitField0_ & 0x00000020) == 0) {
                 tobinTaxes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000020;
               }
@@ -720,8 +720,7 @@ public final class Genesis {
           .equals(other.getAggregateExchangeRateVotesList())) return false;
       if (!getTobinTaxesList()
           .equals(other.getTobinTaxesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1388,7 +1387,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Genesis.FeederDelegation> feederDelegations_ =
         java.util.Collections.emptyList();
       private void ensureFeederDelegationsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           feederDelegations_ = new java.util.ArrayList<>(feederDelegations_);
           bitField0_ |= 0x00000001;
          }
@@ -1627,7 +1626,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Oracle.ExchangeRateTuple> exchangeRates_ =
         java.util.Collections.emptyList();
       private void ensureExchangeRatesIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if ((bitField0_ & 0x00000002) == 0) {
           exchangeRates_ = new java.util.ArrayList<>(exchangeRates_);
           bitField0_ |= 0x00000002;
          }
@@ -1866,7 +1865,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Genesis.MissCounter> missCounters_ =
         java.util.Collections.emptyList();
       private void ensureMissCountersIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if ((bitField0_ & 0x00000004) == 0) {
           missCounters_ = new java.util.ArrayList<>(missCounters_);
           bitField0_ |= 0x00000004;
          }
@@ -2105,7 +2104,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote> aggregateExchangeRatePrevotes_ =
         java.util.Collections.emptyList();
       private void ensureAggregateExchangeRatePrevotesIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if ((bitField0_ & 0x00000008) == 0) {
           aggregateExchangeRatePrevotes_ = new java.util.ArrayList<>(aggregateExchangeRatePrevotes_);
           bitField0_ |= 0x00000008;
          }
@@ -2344,7 +2343,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote> aggregateExchangeRateVotes_ =
         java.util.Collections.emptyList();
       private void ensureAggregateExchangeRateVotesIsMutable() {
-        if (!((bitField0_ & 0x00000010) != 0)) {
+        if ((bitField0_ & 0x00000010) == 0) {
           aggregateExchangeRateVotes_ = new java.util.ArrayList<>(aggregateExchangeRateVotes_);
           bitField0_ |= 0x00000010;
          }
@@ -2583,7 +2582,7 @@ public final class Genesis {
       private java.util.List<terra.oracle.v1beta1.Genesis.TobinTax> tobinTaxes_ =
         java.util.Collections.emptyList();
       private void ensureTobinTaxesIsMutable() {
-        if (!((bitField0_ & 0x00000020) != 0)) {
+        if ((bitField0_ & 0x00000020) == 0) {
           tobinTaxes_ = new java.util.ArrayList<>(tobinTaxes_);
           bitField0_ |= 0x00000020;
          }
@@ -3126,8 +3125,7 @@ public final class Genesis {
           .equals(other.getFeederAddress())) return false;
       if (!getValidatorAddress()
           .equals(other.getValidatorAddress())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3821,8 +3819,7 @@ public final class Genesis {
           .equals(other.getValidatorAddress())) return false;
       if (getMissCounter()
           != other.getMissCounter()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4504,8 +4501,7 @@ public final class Genesis {
           .equals(other.getDenom())) return false;
       if (!getTobinTax()
           .equals(other.getTobinTax())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5014,7 +5010,7 @@ public final class Genesis {
       "tate\0222\n\006params\030\001 \001(\0132\034.terra.oracle.v1be" +
       "ta1.ParamsB\004\310\336\037\000\022H\n\022feeder_delegations\030\002" +
       " \003(\0132&.terra.oracle.v1beta1.FeederDelega" +
-      "tionB\004\310\336\037\000\022[\n\016exchange_rates\030\003 \003(\0132\'.ter" +
+              "tionB\004\310\336\037\000\022[\n\016exchange_rates\030\003 \003(\0132'.ter" +
       "ra.oracle.v1beta1.ExchangeRateTupleB\032\252\337\037" +
       "\022ExchangeRateTuples\310\336\037\000\022>\n\rmiss_counters" +
       "\030\004 \003(\0132!.terra.oracle.v1beta1.MissCounte" +

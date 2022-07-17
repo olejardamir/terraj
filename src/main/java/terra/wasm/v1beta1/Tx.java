@@ -259,8 +259,7 @@ public final class Tx {
           .equals(other.getSender())) return false;
       if (!getWasmByteCode()
           .equals(other.getWasmByteCode())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -884,8 +883,7 @@ public final class Tx {
 
       if (getCodeId()
           != other.getCodeId()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1523,8 +1521,7 @@ public final class Tx {
           .equals(other.getSender())) return false;
       if (!getWasmByteCode()
           .equals(other.getWasmByteCode())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2161,8 +2158,7 @@ public final class Tx {
       }
       terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse other = (terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2651,7 +2647,7 @@ public final class Tx {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 initCoins_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -2957,8 +2953,7 @@ public final class Tx {
           .equals(other.getInitMsg())) return false;
       if (!getInitCoinsList()
           .equals(other.getInitCoinsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3577,7 +3572,7 @@ public final class Tx {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> initCoins_ =
         java.util.Collections.emptyList();
       private void ensureInitCoinsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           initCoins_ = new java.util.ArrayList<>(initCoins_);
           bitField0_ |= 0x00000001;
          }
@@ -4181,8 +4176,7 @@ public final class Tx {
           .equals(other.getContractAddress())) return false;
       if (!getData()
           .equals(other.getData())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4814,7 +4808,7 @@ public final class Tx {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 coins_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -5096,8 +5090,7 @@ public final class Tx {
           .equals(other.getExecuteMsg())) return false;
       if (!getCoinsList()
           .equals(other.getCoinsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5663,7 +5656,7 @@ public final class Tx {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> coins_ =
         java.util.Collections.emptyList();
       private void ensureCoinsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           coins_ = new java.util.ArrayList<>(coins_);
           bitField0_ |= 0x00000001;
          }
@@ -6186,8 +6179,7 @@ public final class Tx {
 
       if (!getData()
           .equals(other.getData())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6908,8 +6900,7 @@ public final class Tx {
           != other.getNewCodeId()) return false;
       if (!getMigrateMsg()
           .equals(other.getMigrateMsg())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -7691,8 +7682,7 @@ public final class Tx {
 
       if (!getData()
           .equals(other.getData())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -8415,8 +8405,7 @@ public final class Tx {
           .equals(other.getNewAdmin())) return false;
       if (!getContract()
           .equals(other.getContract())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -9157,8 +9146,7 @@ public final class Tx {
       }
       terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse other = (terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -9746,8 +9734,7 @@ public final class Tx {
           .equals(other.getAdmin())) return false;
       if (!getContract()
           .equals(other.getContract())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -10383,8 +10370,7 @@ public final class Tx {
       }
       terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse other = (terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -10806,7 +10792,7 @@ public final class Tx {
       "ng/json.RawMessage:\010\350\240\037\000\210\240\037\000\";\n\032MsgMigra" +
       "teContractResponse\022\035\n\004data\030\001 \001(\014B\017\362\336\037\013ya" +
       "ml:\"data\"\"\223\001\n\026MsgUpdateContractAdmin\022\037\n\005" +
-      "admin\030\001 \001(\tB\020\362\336\037\014yaml:\"admin\"\022\'\n\tnew_adm" +
+              "admin\030\001 \001(\tB\020\362\336\037\014yaml:\"admin\"\022'\n\tnew_adm" +
       "in\030\002 \001(\tB\024\362\336\037\020yaml:\"new_admin\"\022%\n\010contra" +
       "ct\030\003 \001(\tB\023\362\336\037\017yaml:\"contract\":\010\350\240\037\000\210\240\037\000\"" +
       " \n\036MsgUpdateContractAdminResponse\"i\n\025Msg" +

@@ -267,8 +267,7 @@ public final class Genesis {
       }
       if (!getTerraPoolDelta()
           .equals(other.getTerraPoolDelta())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+        return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override

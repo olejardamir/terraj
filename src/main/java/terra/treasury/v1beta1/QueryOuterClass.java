@@ -137,8 +137,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -629,8 +628,7 @@ public final class QueryOuterClass {
 
       if (!getTaxRate()
           .equals(other.getTaxRate())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1222,8 +1220,7 @@ public final class QueryOuterClass {
 
       if (!getDenom()
           .equals(other.getDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1819,8 +1816,7 @@ public final class QueryOuterClass {
 
       if (!getTaxCap()
           .equals(other.getTaxCap())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2331,8 +2327,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2888,8 +2883,7 @@ public final class QueryOuterClass {
           .equals(other.getDenom())) return false;
       if (!getTaxCap()
           .equals(other.getTaxCap())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3443,7 +3437,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 taxCaps_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -3573,8 +3567,7 @@ public final class QueryOuterClass {
 
       if (!getTaxCapsList()
           .equals(other.getTaxCapsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3876,7 +3869,7 @@ public final class QueryOuterClass {
       private java.util.List<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem> taxCaps_ =
         java.util.Collections.emptyList();
       private void ensureTaxCapsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           taxCaps_ = new java.util.ArrayList<>(taxCaps_);
           bitField0_ |= 0x00000001;
          }
@@ -4287,8 +4280,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4779,8 +4771,7 @@ public final class QueryOuterClass {
 
       if (!getRewardWeight()
           .equals(other.getRewardWeight())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5291,8 +5282,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5675,7 +5665,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -5805,8 +5795,7 @@ public final class QueryOuterClass {
 
       if (!getTaxProceedsList()
           .equals(other.getTaxProceedsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6108,7 +6097,7 @@ public final class QueryOuterClass {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> taxProceeds_ =
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000001;
          }
@@ -6519,8 +6508,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest other = (terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -7011,8 +6999,7 @@ public final class QueryOuterClass {
 
       if (!getSeigniorageProceeds()
           .equals(other.getSeigniorageProceeds())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -7523,8 +7510,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -8080,8 +8066,7 @@ public final class QueryOuterClass {
           .equals(other.getTrlYear())) return false;
       if (!getTrlMonth()
           .equals(other.getTrlMonth())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -8677,8 +8662,7 @@ public final class QueryOuterClass {
       }
       terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest other = (terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -9193,8 +9177,7 @@ public final class QueryOuterClass {
         if (!getParams()
             .equals(other.getParams())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -9811,7 +9794,7 @@ public final class QueryOuterClass {
       "ury/v1beta1/tax_caps\022\242\001\n\014RewardWeight\0220." +
       "terra.treasury.v1beta1.QueryRewardWeight" +
       "Request\0321.terra.treasury.v1beta1.QueryRe" +
-      "wardWeightResponse\"-\202\323\344\223\002\'\022%/terra/treas" +
+              "wardWeightResponse\"-\202\323\344\223\002'\022%/terra/treas" +
       "ury/v1beta1/reward_weight\022\276\001\n\023Seigniorag" +
       "eProceeds\0227.terra.treasury.v1beta1.Query" +
       "SeigniorageProceedsRequest\0328.terra.treas" +

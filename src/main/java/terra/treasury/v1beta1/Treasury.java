@@ -492,8 +492,7 @@ public final class Treasury {
           != other.getWindowLong()) return false;
       if (getWindowProbation()
           != other.getWindowProbation()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1741,8 +1740,7 @@ public final class Treasury {
       }
       if (!getChangeRateMax()
           .equals(other.getChangeRateMax())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2516,7 +2514,7 @@ public final class Treasury {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -2646,8 +2644,7 @@ public final class Treasury {
 
       if (!getTaxProceedsList()
           .equals(other.getTaxProceedsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2949,7 +2946,7 @@ public final class Treasury {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> taxProceeds_ =
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000001;
          }
@@ -3318,7 +3315,7 @@ public final class Treasury {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 issuance_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -3448,8 +3445,7 @@ public final class Treasury {
 
       if (!getIssuanceList()
           .equals(other.getIssuanceList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3751,7 +3747,7 @@ public final class Treasury {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> issuance_ =
         java.util.Collections.emptyList();
       private void ensureIssuanceIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           issuance_ = new java.util.ArrayList<>(issuance_);
           bitField0_ |= 0x00000001;
          }

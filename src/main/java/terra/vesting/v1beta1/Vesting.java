@@ -123,7 +123,7 @@ public final class Vesting {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 vestingSchedules_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -291,8 +291,7 @@ public final class Vesting {
       }
       if (!getVestingSchedulesList()
           .equals(other.getVestingSchedulesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -730,7 +729,7 @@ public final class Vesting {
       private java.util.List<terra.vesting.v1beta1.Vesting.VestingSchedule> vestingSchedules_ =
         java.util.Collections.emptyList();
       private void ensureVestingSchedulesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           vestingSchedules_ = new java.util.ArrayList<>(vestingSchedules_);
           bitField0_ |= 0x00000001;
          }
@@ -1268,8 +1267,7 @@ public final class Vesting {
           != other.getEndTime()) return false;
       if (!getRatio()
           .equals(other.getRatio())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1835,7 +1833,7 @@ public final class Vesting {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 schedules_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -2011,8 +2009,7 @@ public final class Vesting {
           .equals(other.getDenom())) return false;
       if (!getSchedulesList()
           .equals(other.getSchedulesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2398,7 +2395,7 @@ public final class Vesting {
       private java.util.List<terra.vesting.v1beta1.Vesting.Schedule> schedules_ =
         java.util.Collections.emptyList();
       private void ensureSchedulesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           schedules_ = new java.util.ArrayList<>(schedules_);
           bitField0_ |= 0x00000001;
          }

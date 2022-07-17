@@ -169,7 +169,7 @@ public final class Genesis {
               break;
             }
             case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 codes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -178,7 +178,7 @@ public final class Genesis {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if ((mutable_bitField0_ & 0x00000002) == 0) {
                 contracts_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
@@ -438,8 +438,7 @@ public final class Genesis {
           .equals(other.getCodesList())) return false;
       if (!getContractsList()
           .equals(other.getContractsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1002,7 +1001,7 @@ public final class Genesis {
       private java.util.List<terra.wasm.v1beta1.Genesis.Code> codes_ =
         java.util.Collections.emptyList();
       private void ensureCodesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           codes_ = new java.util.ArrayList<>(codes_);
           bitField0_ |= 0x00000001;
          }
@@ -1241,7 +1240,7 @@ public final class Genesis {
       private java.util.List<terra.wasm.v1beta1.Genesis.Contract> contracts_ =
         java.util.Collections.emptyList();
       private void ensureContractsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if ((bitField0_ & 0x00000002) == 0) {
           contracts_ = new java.util.ArrayList<>(contracts_);
           bitField0_ |= 0x00000002;
          }
@@ -1716,8 +1715,7 @@ public final class Genesis {
           .equals(other.getKey())) return false;
       if (!getValue()
           .equals(other.getValue())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2324,8 +2322,7 @@ public final class Genesis {
       }
       if (!getCodeBytes()
           .equals(other.getCodeBytes())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2913,7 +2910,7 @@ public final class Genesis {
               break;
             }
             case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 contractStore_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -3081,8 +3078,7 @@ public final class Genesis {
       }
       if (!getContractStoreList()
           .equals(other.getContractStoreList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3519,7 +3515,7 @@ public final class Genesis {
       private java.util.List<terra.wasm.v1beta1.Genesis.Model> contractStore_ =
         java.util.Collections.emptyList();
       private void ensureContractStoreIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           contractStore_ = new java.util.ArrayList<>(contractStore_);
           bitField0_ |= 0x00000001;
          }

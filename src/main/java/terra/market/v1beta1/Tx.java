@@ -333,8 +333,7 @@ public final class Tx {
       }
       if (!getAskDenom()
           .equals(other.getAskDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1197,8 +1196,7 @@ public final class Tx {
         if (!getSwapFee()
             .equals(other.getSwapFee())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2156,8 +2154,7 @@ public final class Tx {
       }
       if (!getAskDenom()
           .equals(other.getAskDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3105,8 +3102,7 @@ public final class Tx {
         if (!getSwapFee()
             .equals(other.getSwapFee())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3714,7 +3710,7 @@ public final class Tx {
       "mos/base/v1beta1/coin.proto\"\251\001\n\007MsgSwap\022" +
       "!\n\006trader\030\001 \001(\tB\021\362\336\037\ryaml:\"trader\"\022H\n\nof" +
       "fer_coin\030\002 \001(\0132\031.cosmos.base.v1beta1.Coi" +
-      "nB\031\362\336\037\021yaml:\"offer_coin\"\310\336\037\000\022\'\n\task_deno" +
+              "nB\031\362\336\037\021yaml:\"offer_coin\"\310\336\037\000\022'\n\task_deno" +
       "m\030\003 \001(\tB\024\362\336\037\020yaml:\"ask_denom\":\010\350\240\037\000\210\240\037\000\"" +
       "\237\001\n\017MsgSwapResponse\022F\n\tswap_coin\030\001 \001(\0132\031" +
       ".cosmos.base.v1beta1.CoinB\030\362\336\037\020yaml:\"swa" +
@@ -3724,7 +3720,7 @@ public final class Tx {
       "\027\362\336\037\023yaml:\"from_address\"\022)\n\nto_address\030\002" +
       " \001(\tB\025\362\336\037\021yaml:\"to_address\"\022H\n\noffer_coi" +
       "n\030\003 \001(\0132\031.cosmos.base.v1beta1.CoinB\031\362\336\037\021" +
-      "yaml:\"offer_coin\"\310\336\037\000\022\'\n\task_denom\030\004 \001(\t" +
+              "yaml:\"offer_coin\"\310\336\037\000\022'\n\task_denom\030\004 \001(\t" +
       "B\024\362\336\037\020yaml:\"ask_denom\":\010\350\240\037\000\210\240\037\000\"\243\001\n\023Msg" +
       "SwapSendResponse\022F\n\tswap_coin\030\001 \001(\0132\031.co" +
       "smos.base.v1beta1.CoinB\030\362\336\037\020yaml:\"swap_c" +

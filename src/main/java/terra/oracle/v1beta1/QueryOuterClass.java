@@ -218,8 +218,7 @@ public final class QueryOuterClass {
 
       if (!getDenom()
           .equals(other.getDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -831,8 +830,7 @@ public final class QueryOuterClass {
 
       if (!getExchangeRate()
           .equals(other.getExchangeRate())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1363,8 +1361,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1767,7 +1764,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 exchangeRates_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -1917,8 +1914,7 @@ public final class QueryOuterClass {
 
       if (!getExchangeRatesList()
           .equals(other.getExchangeRatesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -2220,7 +2216,7 @@ public final class QueryOuterClass {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.DecCoin> exchangeRates_ =
         java.util.Collections.emptyList();
       private void ensureExchangeRatesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           exchangeRates_ = new java.util.ArrayList<>(exchangeRates_);
           bitField0_ |= 0x00000001;
          }
@@ -2784,8 +2780,7 @@ public final class QueryOuterClass {
 
       if (!getDenom()
           .equals(other.getDenom())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3397,8 +3392,7 @@ public final class QueryOuterClass {
 
       if (!getTobinTax()
           .equals(other.getTobinTax())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3929,8 +3923,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4333,7 +4326,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 tobinTaxes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -4483,8 +4476,7 @@ public final class QueryOuterClass {
 
       if (!getTobinTaxesList()
           .equals(other.getTobinTaxesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -4786,7 +4778,7 @@ public final class QueryOuterClass {
       private java.util.List<terra.oracle.v1beta1.Oracle.Denom> tobinTaxes_ =
         java.util.Collections.emptyList();
       private void ensureTobinTaxesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           tobinTaxes_ = new java.util.ArrayList<>(tobinTaxes_);
           bitField0_ |= 0x00000001;
          }
@@ -5269,8 +5261,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -5671,7 +5662,7 @@ public final class QueryOuterClass {
               break;
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 actives_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -5815,8 +5806,7 @@ public final class QueryOuterClass {
 
       if (!getActivesList()
           .equals(other.getActivesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6092,7 +6082,7 @@ public final class QueryOuterClass {
 
       private com.google.protobuf.LazyStringList actives_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureActivesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           actives_ = new com.google.protobuf.LazyStringArrayList(actives_);
           bitField0_ |= 0x00000001;
          }
@@ -6411,8 +6401,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -6817,7 +6806,7 @@ public final class QueryOuterClass {
               break;
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 voteTargets_ = new com.google.protobuf.LazyStringArrayList();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -6965,8 +6954,7 @@ public final class QueryOuterClass {
 
       if (!getVoteTargetsList()
           .equals(other.getVoteTargetsList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -7242,7 +7230,7 @@ public final class QueryOuterClass {
 
       private com.google.protobuf.LazyStringList voteTargets_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureVoteTargetsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           voteTargets_ = new com.google.protobuf.LazyStringArrayList(voteTargets_);
           bitField0_ |= 0x00000001;
          }
@@ -7651,8 +7639,7 @@ public final class QueryOuterClass {
 
       if (!getValidatorAddr()
           .equals(other.getValidatorAddr())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -8264,8 +8251,7 @@ public final class QueryOuterClass {
 
       if (!getFeederAddr()
           .equals(other.getFeederAddr())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -8877,8 +8863,7 @@ public final class QueryOuterClass {
 
       if (!getValidatorAddr()
           .equals(other.getValidatorAddr())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -9448,8 +9433,7 @@ public final class QueryOuterClass {
 
       if (getMissCounter()
           != other.getMissCounter()) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -10008,8 +9992,7 @@ public final class QueryOuterClass {
 
       if (!getValidatorAddr()
           .equals(other.getValidatorAddr())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -10630,8 +10613,7 @@ public final class QueryOuterClass {
         if (!getAggregatePrevote()
             .equals(other.getAggregatePrevote())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -11229,8 +11211,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -11633,7 +11614,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 aggregatePrevotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -11783,8 +11764,7 @@ public final class QueryOuterClass {
 
       if (!getAggregatePrevotesList()
           .equals(other.getAggregatePrevotesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -12086,7 +12066,7 @@ public final class QueryOuterClass {
       private java.util.List<terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote> aggregatePrevotes_ =
         java.util.Collections.emptyList();
       private void ensureAggregatePrevotesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           aggregatePrevotes_ = new java.util.ArrayList<>(aggregatePrevotes_);
           bitField0_ |= 0x00000001;
          }
@@ -12650,8 +12630,7 @@ public final class QueryOuterClass {
 
       if (!getValidatorAddr()
           .equals(other.getValidatorAddr())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -13272,8 +13251,7 @@ public final class QueryOuterClass {
         if (!getAggregateVote()
             .equals(other.getAggregateVote())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -13871,8 +13849,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -14275,7 +14252,7 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 aggregateVotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -14425,8 +14402,7 @@ public final class QueryOuterClass {
 
       if (!getAggregateVotesList()
           .equals(other.getAggregateVotesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -14728,7 +14704,7 @@ public final class QueryOuterClass {
       private java.util.List<terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote> aggregateVotes_ =
         java.util.Collections.emptyList();
       private void ensureAggregateVotesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           aggregateVotes_ = new java.util.ArrayList<>(aggregateVotes_);
           bitField0_ |= 0x00000001;
          }
@@ -15211,8 +15187,7 @@ public final class QueryOuterClass {
       }
       terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest other = (terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest) obj;
 
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -15727,8 +15702,7 @@ public final class QueryOuterClass {
         if (!getParams()
             .equals(other.getParams())) return false;
       }
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -16359,9 +16333,9 @@ public final class QueryOuterClass {
       ".com/cosmos/cosmos-sdk/types.Dec\310\336\037\000\"\030\n\026" +
       "QueryTobinTaxesRequest\"t\n\027QueryTobinTaxe" +
       "sResponse\022Y\n\013tobin_taxes\030\001 \003(\0132\033.terra.o" +
-      "racle.v1beta1.DenomB\'\362\336\037\022yaml:\"tobin_tax" +
+              "racle.v1beta1.DenomB'\362\336\037\022yaml:\"tobin_tax" +
       "es\"\252\337\037\tDenomList\310\336\037\000\"\025\n\023QueryActivesRequ" +
-      "est\"\'\n\024QueryActivesResponse\022\017\n\007actives\030\001" +
+              "est\"'\n\024QueryActivesResponse\022\017\n\007actives\030\001" +
       " \003(\t\"\031\n\027QueryVoteTargetsRequest\"0\n\030Query" +
       "VoteTargetsResponse\022\024\n\014vote_targets\030\001 \003(" +
       "\t\"@\n\034QueryFeederDelegationRequest\022\026\n\016val" +

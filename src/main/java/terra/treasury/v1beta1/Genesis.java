@@ -235,7 +235,7 @@ public final class Genesis {
               break;
             }
             case 34: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+              if ((mutable_bitField0_ & 0x00000001) == 0) {
                 taxCaps_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
@@ -244,7 +244,7 @@ public final class Genesis {
               break;
             }
             case 42: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+              if ((mutable_bitField0_ & 0x00000002) == 0) {
                 taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
@@ -253,7 +253,7 @@ public final class Genesis {
               break;
             }
             case 50: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
+              if ((mutable_bitField0_ & 0x00000004) == 0) {
                 epochInitialIssuance_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000004;
               }
@@ -262,7 +262,7 @@ public final class Genesis {
               break;
             }
             case 58: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+              if ((mutable_bitField0_ & 0x00000008) == 0) {
                 epochStates_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000008;
               }
@@ -678,8 +678,7 @@ public final class Genesis {
           .equals(other.getEpochInitialIssuanceList())) return false;
       if (!getEpochStatesList()
           .equals(other.getEpochStatesList())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -1424,7 +1423,7 @@ public final class Genesis {
       private java.util.List<terra.treasury.v1beta1.Genesis.TaxCap> taxCaps_ =
         java.util.Collections.emptyList();
       private void ensureTaxCapsIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if ((bitField0_ & 0x00000001) == 0) {
           taxCaps_ = new java.util.ArrayList<>(taxCaps_);
           bitField0_ |= 0x00000001;
          }
@@ -1663,7 +1662,7 @@ public final class Genesis {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> taxProceeds_ =
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
+        if ((bitField0_ & 0x00000002) == 0) {
           taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000002;
          }
@@ -1902,7 +1901,7 @@ public final class Genesis {
       private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> epochInitialIssuance_ =
         java.util.Collections.emptyList();
       private void ensureEpochInitialIssuanceIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
+        if ((bitField0_ & 0x00000004) == 0) {
           epochInitialIssuance_ = new java.util.ArrayList<>(epochInitialIssuance_);
           bitField0_ |= 0x00000004;
          }
@@ -2141,7 +2140,7 @@ public final class Genesis {
       private java.util.List<terra.treasury.v1beta1.Genesis.EpochState> epochStates_ =
         java.util.Collections.emptyList();
       private void ensureEpochStatesIsMutable() {
-        if (!((bitField0_ & 0x00000008) != 0)) {
+        if ((bitField0_ & 0x00000008) == 0) {
           epochStates_ = new java.util.ArrayList<>(epochStates_);
           bitField0_ |= 0x00000008;
          }
@@ -2682,8 +2681,7 @@ public final class Genesis {
           .equals(other.getDenom())) return false;
       if (!getTaxCap()
           .equals(other.getTaxCap())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
@@ -3504,8 +3502,7 @@ public final class Genesis {
           .equals(other.getSeigniorageReward())) return false;
       if (!getTotalStakedLuna()
           .equals(other.getTotalStakedLuna())) return false;
-      if (!unknownFields.equals(other.unknownFields)) return false;
-      return true;
+      return unknownFields.equals(other.unknownFields);
     }
 
     @java.lang.Override
