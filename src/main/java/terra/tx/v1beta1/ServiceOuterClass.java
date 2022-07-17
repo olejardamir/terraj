@@ -71,8 +71,13 @@ public final class ServiceOuterClass {
     private ServiceOuterClass() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -536,11 +541,13 @@ public final class ServiceOuterClass {
 
             // Construct using terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -554,6 +561,9 @@ public final class ServiceOuterClass {
                 return terra.tx.v1beta1.ServiceOuterClass.internal_static_terra_tx_v1beta1_ComputeTaxRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.class, terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

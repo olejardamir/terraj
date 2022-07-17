@@ -52,8 +52,13 @@ public final class Market {
     private Market() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -469,11 +474,13 @@ public final class Market {
 
             // Construct using terra.market.v1beta1.Market.Params.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -487,6 +494,9 @@ public final class Market {
                 return terra.market.v1beta1.Market.internal_static_terra_market_v1beta1_Params_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Market.Params.class, terra.market.v1beta1.Market.Params.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

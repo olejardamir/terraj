@@ -129,8 +129,13 @@ public final class QueryOuterClass {
     private QueryOuterClass() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -705,11 +710,13 @@ public final class QueryOuterClass {
 
             // Construct using terra.market.v1beta1.QueryOuterClass.QuerySwapRequest.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -723,6 +730,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QuerySwapRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QuerySwapRequest.class, terra.market.v1beta1.QueryOuterClass.QuerySwapRequest.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -1443,11 +1453,13 @@ public final class QueryOuterClass {
 
             // Construct using terra.market.v1beta1.QueryOuterClass.QuerySwapResponse.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -1461,6 +1473,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QuerySwapResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QuerySwapResponse.class, terra.market.v1beta1.QueryOuterClass.QuerySwapResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2056,11 +2071,13 @@ public final class QueryOuterClass {
                 terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequestOrBuilder {
             // Construct using terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2074,6 +2091,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QueryTerraPoolDeltaRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest.class, terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2533,11 +2553,13 @@ public final class QueryOuterClass {
 
             // Construct using terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2551,6 +2573,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QueryTerraPoolDeltaResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse.class, terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -3028,11 +3053,13 @@ public final class QueryOuterClass {
                 terra.market.v1beta1.QueryOuterClass.QueryParamsRequestOrBuilder {
             // Construct using terra.market.v1beta1.QueryOuterClass.QueryParamsRequest.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -3046,6 +3073,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QueryParamsRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QueryParamsRequest.class, terra.market.v1beta1.QueryOuterClass.QueryParamsRequest.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -3544,11 +3574,13 @@ public final class QueryOuterClass {
 
             // Construct using terra.market.v1beta1.QueryOuterClass.QueryParamsResponse.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -3562,6 +3594,9 @@ public final class QueryOuterClass {
                 return terra.market.v1beta1.QueryOuterClass.internal_static_terra_market_v1beta1_QueryParamsResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.QueryOuterClass.QueryParamsResponse.class, terra.market.v1beta1.QueryOuterClass.QueryParamsResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

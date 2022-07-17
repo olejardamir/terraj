@@ -93,8 +93,13 @@ public final class Genesis {
     private Genesis() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -2180,11 +2185,13 @@ public final class Genesis {
 
             // Construct using terra.wasm.v1beta1.Genesis.Model.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2198,6 +2205,9 @@ public final class Genesis {
                 return terra.wasm.v1beta1.Genesis.internal_static_terra_wasm_v1beta1_Model_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Genesis.Model.class, terra.wasm.v1beta1.Genesis.Model.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2802,11 +2812,13 @@ public final class Genesis {
 
             // Construct using terra.wasm.v1beta1.Genesis.Code.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2820,6 +2832,9 @@ public final class Genesis {
                 return terra.wasm.v1beta1.Genesis.internal_static_terra_wasm_v1beta1_Code_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Genesis.Code.class, terra.wasm.v1beta1.Genesis.Code.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

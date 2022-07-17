@@ -102,6 +102,9 @@ public final class Tx {
     private Tx() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -808,6 +811,9 @@ public final class Tx {
                 return terra.market.v1beta1.Tx.internal_static_terra_market_v1beta1_MsgSwap_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Tx.MsgSwap.class, terra.market.v1beta1.Tx.MsgSwap.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -1697,6 +1703,9 @@ public final class Tx {
                 return terra.market.v1beta1.Tx.internal_static_terra_market_v1beta1_MsgSwapResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Tx.MsgSwapResponse.class, terra.market.v1beta1.Tx.MsgSwapResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2655,6 +2664,9 @@ public final class Tx {
                 return terra.market.v1beta1.Tx.internal_static_terra_market_v1beta1_MsgSwapSend_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Tx.MsgSwapSend.class, terra.market.v1beta1.Tx.MsgSwapSend.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -3635,6 +3647,9 @@ public final class Tx {
                 return terra.market.v1beta1.Tx.internal_static_terra_market_v1beta1_MsgSwapSendResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Tx.MsgSwapSendResponse.class, terra.market.v1beta1.Tx.MsgSwapSendResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

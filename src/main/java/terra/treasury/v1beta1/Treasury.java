@@ -112,6 +112,9 @@ public final class Treasury {
     private Treasury() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -990,6 +993,9 @@ public final class Treasury {
                 return terra.treasury.v1beta1.Treasury.internal_static_terra_treasury_v1beta1_Params_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.treasury.v1beta1.Treasury.Params.class, terra.treasury.v1beta1.Treasury.Params.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2253,6 +2259,9 @@ public final class Treasury {
                 return terra.treasury.v1beta1.Treasury.internal_static_terra_treasury_v1beta1_PolicyConstraints_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.treasury.v1beta1.Treasury.PolicyConstraints.class, terra.treasury.v1beta1.Treasury.PolicyConstraints.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

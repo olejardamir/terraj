@@ -257,6 +257,9 @@ public final class Tx {
     private Tx() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -1290,6 +1293,9 @@ public final class Tx {
                                 terra.wasm.v1beta1.Tx.MsgStoreCode.class, terra.wasm.v1beta1.Tx.MsgStoreCode.Builder.class);
             }
 
+            private void maybeForceBuilderInitialization() {
+            }
+
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -1935,6 +1941,9 @@ public final class Tx {
                                 terra.wasm.v1beta1.Tx.MsgStoreCodeResponse.class, terra.wasm.v1beta1.Tx.MsgStoreCodeResponse.Builder.class);
             }
 
+            private void maybeForceBuilderInitialization() {
+            }
+
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -2566,6 +2575,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgMigrateCode_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgMigrateCode.class, terra.wasm.v1beta1.Tx.MsgMigrateCode.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -3226,6 +3238,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgMigrateCodeResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse.class, terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -5219,6 +5234,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgInstantiateContractResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse.class, terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -7226,6 +7244,9 @@ public final class Tx {
                                 terra.wasm.v1beta1.Tx.MsgExecuteContractResponse.class, terra.wasm.v1beta1.Tx.MsgExecuteContractResponse.Builder.class);
             }
 
+            private void maybeForceBuilderInitialization() {
+            }
+
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -7926,6 +7947,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgMigrateContract_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgMigrateContract.class, terra.wasm.v1beta1.Tx.MsgMigrateContract.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -8737,6 +8761,9 @@ public final class Tx {
                                 terra.wasm.v1beta1.Tx.MsgMigrateContractResponse.class, terra.wasm.v1beta1.Tx.MsgMigrateContractResponse.Builder.class);
             }
 
+            private void maybeForceBuilderInitialization() {
+            }
+
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -9435,6 +9462,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgUpdateContractAdmin_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin.class, terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -10210,6 +10240,9 @@ public final class Tx {
                                 terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.class, terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.Builder.class);
             }
 
+            private void maybeForceBuilderInitialization() {
+            }
+
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -10786,6 +10819,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgClearContractAdmin_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgClearContractAdmin.class, terra.wasm.v1beta1.Tx.MsgClearContractAdmin.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -11448,6 +11484,9 @@ public final class Tx {
                 return terra.wasm.v1beta1.Tx.internal_static_terra_wasm_v1beta1_MsgClearContractAdminResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse.class, terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

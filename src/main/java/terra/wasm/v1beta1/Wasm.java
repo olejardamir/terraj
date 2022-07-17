@@ -84,8 +84,13 @@ public final class Wasm {
     private Wasm() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
+        registerAllExtensions(
+        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -644,11 +649,13 @@ public final class Wasm {
 
             // Construct using terra.wasm.v1beta1.Wasm.Params.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -662,6 +669,9 @@ public final class Wasm {
                 return terra.wasm.v1beta1.Wasm.internal_static_terra_wasm_v1beta1_Params_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Wasm.Params.class, terra.wasm.v1beta1.Wasm.Params.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -1343,11 +1353,13 @@ public final class Wasm {
 
             // Construct using terra.wasm.v1beta1.Wasm.CodeInfo.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -1361,6 +1373,9 @@ public final class Wasm {
                 return terra.wasm.v1beta1.Wasm.internal_static_terra_wasm_v1beta1_CodeInfo_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Wasm.CodeInfo.class, terra.wasm.v1beta1.Wasm.CodeInfo.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2271,11 +2286,13 @@ public final class Wasm {
 
             // Construct using terra.wasm.v1beta1.Wasm.ContractInfo.newBuilder()
             private Builder() {
+                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
+                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2289,6 +2306,9 @@ public final class Wasm {
                 return terra.wasm.v1beta1.Wasm.internal_static_terra_wasm_v1beta1_ContractInfo_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.wasm.v1beta1.Wasm.ContractInfo.class, terra.wasm.v1beta1.Wasm.ContractInfo.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

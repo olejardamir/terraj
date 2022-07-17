@@ -86,6 +86,9 @@ public final class Vesting {
     private Vesting() {
     }
 
+    public static void registerAllExtensions() {
+    }
+
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -1683,6 +1686,9 @@ public final class Vesting {
                 return terra.vesting.v1beta1.Vesting.internal_static_terra_vesting_v1beta1_Schedule_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.vesting.v1beta1.Vesting.Schedule.class, terra.vesting.v1beta1.Vesting.Schedule.Builder.class);
+            }
+
+            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
