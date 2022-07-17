@@ -1,5 +1,7 @@
 package terra.wasm.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -260,8 +262,7 @@ public final class QueryGrpc {
      * CodeInfo returns the stored code info
      * </pre>
      */
-    public void codeInfo(terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
+    public void codeInfo(StreamObserver<QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCodeInfoMethod(), responseObserver);
     }
 
@@ -270,8 +271,7 @@ public final class QueryGrpc {
      * ByteCode returns the stored byte code
      * </pre>
      */
-    public void byteCode(terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> responseObserver) {
+    public void byteCode(StreamObserver<QueryOuterClass.QueryByteCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getByteCodeMethod(), responseObserver);
     }
 
@@ -280,8 +280,7 @@ public final class QueryGrpc {
      * ContractInfo returns the stored contract info
      * </pre>
      */
-    public void contractInfo(terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> responseObserver) {
+    public void contractInfo(StreamObserver<QueryOuterClass.QueryContractInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getContractInfoMethod(), responseObserver);
     }
 
@@ -290,8 +289,7 @@ public final class QueryGrpc {
      * ContractStore return smart query result from the contract
      * </pre>
      */
-    public void contractStore(terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> responseObserver) {
+    public void contractStore(StreamObserver<QueryOuterClass.QueryContractStoreResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getContractStoreMethod(), responseObserver);
     }
 
@@ -300,8 +298,7 @@ public final class QueryGrpc {
      * RawStore return single key from the raw store data of a contract
      * </pre>
      */
-    public void rawStore(terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> responseObserver) {
+    public void rawStore(StreamObserver<QueryOuterClass.QueryRawStoreResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRawStoreMethod(), responseObserver);
     }
 
@@ -310,8 +307,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(StreamObserver<QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -634,28 +630,28 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CODE_INFO:
-          serviceImpl.codeInfo((terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>) responseObserver);
+          serviceImpl.codeInfo(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>) responseObserver);
           break;
         case METHODID_BYTE_CODE:
-          serviceImpl.byteCode((terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>) responseObserver);
+          serviceImpl.byteCode(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>) responseObserver);
           break;
         case METHODID_CONTRACT_INFO:
-          serviceImpl.contractInfo((terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>) responseObserver);
+          serviceImpl.contractInfo(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>) responseObserver);
           break;
         case METHODID_CONTRACT_STORE:
-          serviceImpl.contractStore((terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>) responseObserver);
+          serviceImpl.contractStore(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>) responseObserver);
           break;
         case METHODID_RAW_STORE:
-          serviceImpl.rawStore((terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>) responseObserver);
+          serviceImpl.rawStore(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

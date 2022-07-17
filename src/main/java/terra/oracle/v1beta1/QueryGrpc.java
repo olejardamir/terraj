@@ -1,5 +1,7 @@
 package terra.oracle.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -477,8 +479,7 @@ public final class QueryGrpc {
      * ExchangeRate returns exchange rate of a denom
      * </pre>
      */
-    public void exchangeRate(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
+    public void exchangeRate(StreamObserver<QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeRateMethod(), responseObserver);
     }
 
@@ -487,8 +488,7 @@ public final class QueryGrpc {
      * ExchangeRates returns exchange rates of all denoms
      * </pre>
      */
-    public void exchangeRates(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
+    public void exchangeRates(StreamObserver<QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeRatesMethod(), responseObserver);
     }
 
@@ -497,8 +497,7 @@ public final class QueryGrpc {
      * TobinTax returns tobin tax of a denom
      * </pre>
      */
-    public void tobinTax(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
+    public void tobinTax(StreamObserver<QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTobinTaxMethod(), responseObserver);
     }
 
@@ -507,8 +506,7 @@ public final class QueryGrpc {
      * TobinTaxes returns tobin taxes of all denoms
      * </pre>
      */
-    public void tobinTaxes(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
+    public void tobinTaxes(StreamObserver<QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTobinTaxesMethod(), responseObserver);
     }
 
@@ -517,8 +515,7 @@ public final class QueryGrpc {
      * Actives returns all active denoms
      * </pre>
      */
-    public void actives(terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> responseObserver) {
+    public void actives(StreamObserver<QueryOuterClass.QueryActivesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getActivesMethod(), responseObserver);
     }
 
@@ -527,8 +524,7 @@ public final class QueryGrpc {
      * VoteTargets returns all vote target denoms
      * </pre>
      */
-    public void voteTargets(terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
+    public void voteTargets(StreamObserver<QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVoteTargetsMethod(), responseObserver);
     }
 
@@ -537,8 +533,7 @@ public final class QueryGrpc {
      * FeederDelegation returns feeder delegation of a validator
      * </pre>
      */
-    public void feederDelegation(terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
+    public void feederDelegation(StreamObserver<QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFeederDelegationMethod(), responseObserver);
     }
 
@@ -547,8 +542,7 @@ public final class QueryGrpc {
      * MissCounter returns oracle miss counter of a validator
      * </pre>
      */
-    public void missCounter(terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> responseObserver) {
+    public void missCounter(StreamObserver<QueryOuterClass.QueryMissCounterResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMissCounterMethod(), responseObserver);
     }
 
@@ -557,8 +551,7 @@ public final class QueryGrpc {
      * AggregatePrevote returns an aggregate prevote of a validator
      * </pre>
      */
-    public void aggregatePrevote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
+    public void aggregatePrevote(StreamObserver<QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregatePrevoteMethod(), responseObserver);
     }
 
@@ -567,8 +560,7 @@ public final class QueryGrpc {
      * AggregatePrevotes returns aggregate prevotes of all validators
      * </pre>
      */
-    public void aggregatePrevotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
+    public void aggregatePrevotes(StreamObserver<QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregatePrevotesMethod(), responseObserver);
     }
 
@@ -577,8 +569,7 @@ public final class QueryGrpc {
      * AggregateVote returns an aggregate vote of a validator
      * </pre>
      */
-    public void aggregateVote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
+    public void aggregateVote(StreamObserver<QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateVoteMethod(), responseObserver);
     }
 
@@ -587,8 +578,7 @@ public final class QueryGrpc {
      * AggregateVotes returns aggregate votes of all validators
      * </pre>
      */
-    public void aggregateVotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
+    public void aggregateVotes(StreamObserver<QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateVotesMethod(), responseObserver);
     }
 
@@ -597,8 +587,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(StreamObserver<QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -1201,56 +1190,56 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_EXCHANGE_RATE:
-          serviceImpl.exchangeRate((terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>) responseObserver);
+          serviceImpl.exchangeRate(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>) responseObserver);
           break;
         case METHODID_EXCHANGE_RATES:
-          serviceImpl.exchangeRates((terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>) responseObserver);
+          serviceImpl.exchangeRates(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>) responseObserver);
           break;
         case METHODID_TOBIN_TAX:
-          serviceImpl.tobinTax((terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>) responseObserver);
+          serviceImpl.tobinTax(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>) responseObserver);
           break;
         case METHODID_TOBIN_TAXES:
-          serviceImpl.tobinTaxes((terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>) responseObserver);
+          serviceImpl.tobinTaxes(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>) responseObserver);
           break;
         case METHODID_ACTIVES:
-          serviceImpl.actives((terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>) responseObserver);
+          serviceImpl.actives(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>) responseObserver);
           break;
         case METHODID_VOTE_TARGETS:
-          serviceImpl.voteTargets((terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>) responseObserver);
+          serviceImpl.voteTargets(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>) responseObserver);
           break;
         case METHODID_FEEDER_DELEGATION:
-          serviceImpl.feederDelegation((terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>) responseObserver);
+          serviceImpl.feederDelegation(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>) responseObserver);
           break;
         case METHODID_MISS_COUNTER:
-          serviceImpl.missCounter((terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>) responseObserver);
+          serviceImpl.missCounter(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_PREVOTE:
-          serviceImpl.aggregatePrevote((terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>) responseObserver);
+          serviceImpl.aggregatePrevote(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_PREVOTES:
-          serviceImpl.aggregatePrevotes((terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>) responseObserver);
+          serviceImpl.aggregatePrevotes(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_VOTE:
-          serviceImpl.aggregateVote((terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>) responseObserver);
+          serviceImpl.aggregateVote(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_VOTES:
-          serviceImpl.aggregateVotes((terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>) responseObserver);
+          serviceImpl.aggregateVotes(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

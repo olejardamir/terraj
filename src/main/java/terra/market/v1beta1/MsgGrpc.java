@@ -1,5 +1,7 @@
 package terra.market.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -137,8 +139,7 @@ public final class MsgGrpc {
      * denom.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.Tx.MsgSwap request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse> responseObserver) {
+    public void swap(StreamObserver<Tx.MsgSwapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapMethod(), responseObserver);
     }
 
@@ -148,8 +149,7 @@ public final class MsgGrpc {
      * account.
      * </pre>
      */
-    public void swapSend(terra.market.v1beta1.Tx.MsgSwapSend request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse> responseObserver) {
+    public void swapSend(StreamObserver<Tx.MsgSwapSendResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapSendMethod(), responseObserver);
     }
 
@@ -318,12 +318,12 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SWAP:
-          serviceImpl.swap((terra.market.v1beta1.Tx.MsgSwap) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse>) responseObserver);
+          serviceImpl.swap(
+                  (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse>) responseObserver);
           break;
         case METHODID_SWAP_SEND:
-          serviceImpl.swapSend((terra.market.v1beta1.Tx.MsgSwapSend) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse>) responseObserver);
+          serviceImpl.swapSend(
+                  (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

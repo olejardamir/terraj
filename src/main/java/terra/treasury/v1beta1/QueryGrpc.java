@@ -1,5 +1,7 @@
 package terra.treasury.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -322,8 +324,7 @@ public final class QueryGrpc {
      * TaxRate return the current tax rate
      * </pre>
      */
-    public void taxRate(terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse> responseObserver) {
+    public void taxRate(StreamObserver<QueryOuterClass.QueryTaxRateResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxRateMethod(), responseObserver);
     }
 
@@ -332,8 +333,7 @@ public final class QueryGrpc {
      * TaxCap returns the tax cap of a denom
      * </pre>
      */
-    public void taxCap(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse> responseObserver) {
+    public void taxCap(StreamObserver<QueryOuterClass.QueryTaxCapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxCapMethod(), responseObserver);
     }
 
@@ -342,8 +342,7 @@ public final class QueryGrpc {
      * TaxCaps returns the all tax caps
      * </pre>
      */
-    public void taxCaps(terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
+    public void taxCaps(StreamObserver<QueryOuterClass.QueryTaxCapsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxCapsMethod(), responseObserver);
     }
 
@@ -352,8 +351,7 @@ public final class QueryGrpc {
      * RewardWeight return the current reward weight
      * </pre>
      */
-    public void rewardWeight(terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
+    public void rewardWeight(StreamObserver<QueryOuterClass.QueryRewardWeightResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRewardWeightMethod(), responseObserver);
     }
 
@@ -362,8 +360,7 @@ public final class QueryGrpc {
      * SeigniorageProceeds return the current seigniorage proceeds
      * </pre>
      */
-    public void seigniorageProceeds(terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
+    public void seigniorageProceeds(StreamObserver<QueryOuterClass.QuerySeigniorageProceedsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSeigniorageProceedsMethod(), responseObserver);
     }
 
@@ -372,8 +369,7 @@ public final class QueryGrpc {
      * TaxProceeds return the current tax proceeds
      * </pre>
      */
-    public void taxProceeds(terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
+    public void taxProceeds(StreamObserver<QueryOuterClass.QueryTaxProceedsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTaxProceedsMethod(), responseObserver);
     }
 
@@ -382,8 +378,7 @@ public final class QueryGrpc {
      * Indicators return the current trl informations
      * </pre>
      */
-    public void indicators(terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
+    public void indicators(StreamObserver<QueryOuterClass.QueryIndicatorsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getIndicatorsMethod(), responseObserver);
     }
 
@@ -392,8 +387,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(StreamObserver<QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -796,36 +790,36 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_TAX_RATE:
-          serviceImpl.taxRate((terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>) responseObserver);
+          serviceImpl.taxRate(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxRateResponse>) responseObserver);
           break;
         case METHODID_TAX_CAP:
-          serviceImpl.taxCap((terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>) responseObserver);
+          serviceImpl.taxCap(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapResponse>) responseObserver);
           break;
         case METHODID_TAX_CAPS:
-          serviceImpl.taxCaps((terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>) responseObserver);
+          serviceImpl.taxCaps(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponse>) responseObserver);
           break;
         case METHODID_REWARD_WEIGHT:
-          serviceImpl.rewardWeight((terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>) responseObserver);
+          serviceImpl.rewardWeight(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryRewardWeightResponse>) responseObserver);
           break;
         case METHODID_SEIGNIORAGE_PROCEEDS:
-          serviceImpl.seigniorageProceeds((terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>) responseObserver);
+          serviceImpl.seigniorageProceeds(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QuerySeigniorageProceedsResponse>) responseObserver);
           break;
         case METHODID_TAX_PROCEEDS:
-          serviceImpl.taxProceeds((terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>) responseObserver);
+          serviceImpl.taxProceeds(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryTaxProceedsResponse>) responseObserver);
           break;
         case METHODID_INDICATORS:
-          serviceImpl.indicators((terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>) responseObserver);
+          serviceImpl.indicators(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryIndicatorsResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.treasury.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params(
+                  (io.grpc.stub.StreamObserver<terra.treasury.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

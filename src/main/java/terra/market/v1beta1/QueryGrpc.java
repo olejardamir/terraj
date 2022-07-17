@@ -1,5 +1,7 @@
 package terra.market.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -167,8 +169,7 @@ public final class QueryGrpc {
      * Swap returns simulated swap amount.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.QueryOuterClass.QuerySwapRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse> responseObserver) {
+    public void swap(StreamObserver<QueryOuterClass.QuerySwapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapMethod(), responseObserver);
     }
 
@@ -177,8 +178,7 @@ public final class QueryGrpc {
      * TerraPoolDelta returns terra_pool_delta amount.
      * </pre>
      */
-    public void terraPoolDelta(terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse> responseObserver) {
+    public void terraPoolDelta(StreamObserver<QueryOuterClass.QueryTerraPoolDeltaResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTerraPoolDeltaMethod(), responseObserver);
     }
 
@@ -187,8 +187,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.market.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(StreamObserver<QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -391,16 +390,16 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SWAP:
-          serviceImpl.swap((terra.market.v1beta1.QueryOuterClass.QuerySwapRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse>) responseObserver);
+          serviceImpl.swap(
+                  (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QuerySwapResponse>) responseObserver);
           break;
         case METHODID_TERRA_POOL_DELTA:
-          serviceImpl.terraPoolDelta((terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse>) responseObserver);
+          serviceImpl.terraPoolDelta(
+                  (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryTerraPoolDeltaResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.market.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params(
+                  (io.grpc.stub.StreamObserver<terra.market.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

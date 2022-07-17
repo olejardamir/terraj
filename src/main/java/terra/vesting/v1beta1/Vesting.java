@@ -5,14 +5,13 @@ package terra.vesting.v1beta1;
 
 public final class Vesting {
   private Vesting() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
+  public static void registerAllExtensions() {
   }
 
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
+    );
   }
   public interface LazyGradedVestingAccountOrBuilder extends
       // @@protoc_insertion_point(interface_extends:terra.vesting.v1beta1.LazyGradedVestingAccount)
@@ -1415,9 +1414,6 @@ public final class Vesting {
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
       }
       @java.lang.Override
       public Builder clear() {

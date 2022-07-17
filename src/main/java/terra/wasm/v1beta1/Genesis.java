@@ -5,14 +5,13 @@ package terra.wasm.v1beta1;
 
 public final class Genesis {
   private Genesis() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
+  public static void registerAllExtensions() {
   }
 
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
+    );
   }
   public interface GenesisStateOrBuilder extends
       // @@protoc_insertion_point(interface_extends:terra.wasm.v1beta1.GenesisState)
@@ -1859,9 +1858,6 @@ public final class Genesis {
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
       }
       @java.lang.Override
       public Builder clear() {
@@ -2468,9 +2464,6 @@ public final class Genesis {
         maybeForceBuilderInitialization();
       }
       private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
       }
       @java.lang.Override
       public Builder clear() {

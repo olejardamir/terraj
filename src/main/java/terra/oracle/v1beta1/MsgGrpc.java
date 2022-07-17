@@ -1,5 +1,7 @@
 package terra.oracle.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -168,8 +170,7 @@ public final class MsgGrpc {
      * aggregate exchange rate prevote
      * </pre>
      */
-    public void aggregateExchangeRatePrevote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
+    public void aggregateExchangeRatePrevote(StreamObserver<Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateExchangeRatePrevoteMethod(), responseObserver);
     }
 
@@ -179,8 +180,7 @@ public final class MsgGrpc {
      * aggregate exchange rate vote
      * </pre>
      */
-    public void aggregateExchangeRateVote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
+    public void aggregateExchangeRateVote(StreamObserver<Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateExchangeRateVoteMethod(), responseObserver);
     }
 
@@ -189,8 +189,7 @@ public final class MsgGrpc {
      * DelegateFeedConsent defines a method for setting the feeder delegation
      * </pre>
      */
-    public void delegateFeedConsent(terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> responseObserver) {
+    public void delegateFeedConsent(StreamObserver<Tx.MsgDelegateFeedConsentResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDelegateFeedConsentMethod(), responseObserver);
     }
 
@@ -399,16 +398,16 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_AGGREGATE_EXCHANGE_RATE_PREVOTE:
-          serviceImpl.aggregateExchangeRatePrevote((terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>) responseObserver);
+          serviceImpl.aggregateExchangeRatePrevote(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_EXCHANGE_RATE_VOTE:
-          serviceImpl.aggregateExchangeRateVote((terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>) responseObserver);
+          serviceImpl.aggregateExchangeRateVote(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>) responseObserver);
           break;
         case METHODID_DELEGATE_FEED_CONSENT:
-          serviceImpl.delegateFeedConsent((terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>) responseObserver);
+          serviceImpl.delegateFeedConsent(
+                  (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

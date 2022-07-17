@@ -1,5 +1,7 @@
 package terra.wasm.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -291,8 +293,7 @@ public final class MsgGrpc {
      * StoreCode to submit Wasm code to the system
      * </pre>
      */
-    public void storeCode(terra.wasm.v1beta1.Tx.MsgStoreCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> responseObserver) {
+    public void storeCode(StreamObserver<Tx.MsgStoreCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getStoreCodeMethod(), responseObserver);
     }
 
@@ -301,8 +302,7 @@ public final class MsgGrpc {
      * MigrateCode to submit new version Wasm code to the system
      * </pre>
      */
-    public void migrateCode(terra.wasm.v1beta1.Tx.MsgMigrateCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> responseObserver) {
+    public void migrateCode(StreamObserver<Tx.MsgMigrateCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMigrateCodeMethod(), responseObserver);
     }
 
@@ -311,8 +311,7 @@ public final class MsgGrpc {
      *  Instantiate creates a new smart contract instance for the given code id.
      * </pre>
      */
-    public void instantiateContract(terra.wasm.v1beta1.Tx.MsgInstantiateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> responseObserver) {
+    public void instantiateContract(StreamObserver<Tx.MsgInstantiateContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getInstantiateContractMethod(), responseObserver);
     }
 
@@ -321,8 +320,7 @@ public final class MsgGrpc {
      * Execute submits the given message data to a smart contract
      * </pre>
      */
-    public void executeContract(terra.wasm.v1beta1.Tx.MsgExecuteContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> responseObserver) {
+    public void executeContract(StreamObserver<Tx.MsgExecuteContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExecuteContractMethod(), responseObserver);
     }
 
@@ -331,8 +329,7 @@ public final class MsgGrpc {
      * Migrate runs a code upgrade/ downgrade for a smart contract
      * </pre>
      */
-    public void migrateContract(terra.wasm.v1beta1.Tx.MsgMigrateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> responseObserver) {
+    public void migrateContract(StreamObserver<Tx.MsgMigrateContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMigrateContractMethod(), responseObserver);
     }
 
@@ -341,8 +338,7 @@ public final class MsgGrpc {
      * UpdateContractAdmin sets a new admin for a smart contract
      * </pre>
      */
-    public void updateContractAdmin(terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> responseObserver) {
+    public void updateContractAdmin(StreamObserver<Tx.MsgUpdateContractAdminResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateContractAdminMethod(), responseObserver);
     }
 
@@ -351,8 +347,7 @@ public final class MsgGrpc {
      * ClearContractAdmin remove admin flag from a smart contract
      * </pre>
      */
-    public void clearContractAdmin(terra.wasm.v1beta1.Tx.MsgClearContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> responseObserver) {
+    public void clearContractAdmin(StreamObserver<Tx.MsgClearContractAdminResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getClearContractAdminMethod(), responseObserver);
     }
 
@@ -715,32 +710,32 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_STORE_CODE:
-          serviceImpl.storeCode((terra.wasm.v1beta1.Tx.MsgStoreCode) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse>) responseObserver);
+          serviceImpl.storeCode(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse>) responseObserver);
           break;
         case METHODID_MIGRATE_CODE:
-          serviceImpl.migrateCode((terra.wasm.v1beta1.Tx.MsgMigrateCode) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse>) responseObserver);
+          serviceImpl.migrateCode(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse>) responseObserver);
           break;
         case METHODID_INSTANTIATE_CONTRACT:
-          serviceImpl.instantiateContract((terra.wasm.v1beta1.Tx.MsgInstantiateContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse>) responseObserver);
+          serviceImpl.instantiateContract(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse>) responseObserver);
           break;
         case METHODID_EXECUTE_CONTRACT:
-          serviceImpl.executeContract((terra.wasm.v1beta1.Tx.MsgExecuteContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse>) responseObserver);
+          serviceImpl.executeContract(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse>) responseObserver);
           break;
         case METHODID_MIGRATE_CONTRACT:
-          serviceImpl.migrateContract((terra.wasm.v1beta1.Tx.MsgMigrateContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse>) responseObserver);
+          serviceImpl.migrateContract(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse>) responseObserver);
           break;
         case METHODID_UPDATE_CONTRACT_ADMIN:
-          serviceImpl.updateContractAdmin((terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>) responseObserver);
+          serviceImpl.updateContractAdmin(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>) responseObserver);
           break;
         case METHODID_CLEAR_CONTRACT_ADMIN:
-          serviceImpl.clearContractAdmin((terra.wasm.v1beta1.Tx.MsgClearContractAdmin) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse>) responseObserver);
+          serviceImpl.clearContractAdmin(
+                  (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

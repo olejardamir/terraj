@@ -5,14 +5,13 @@ package terra.oracle.v1beta1;
 
 public final class Genesis {
   private Genesis() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
+  public static void registerAllExtensions() {
   }
 
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
+    );
   }
   public interface GenesisStateOrBuilder extends
       // @@protoc_insertion_point(interface_extends:terra.oracle.v1beta1.GenesisState)

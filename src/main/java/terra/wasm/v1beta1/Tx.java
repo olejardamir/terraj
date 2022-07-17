@@ -5,14 +5,13 @@ package terra.wasm.v1beta1;
 
 public final class Tx {
   private Tx() {}
-  public static void registerAllExtensions(
-      com.google.protobuf.ExtensionRegistryLite registry) {
+  public static void registerAllExtensions() {
   }
 
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistry registry) {
     registerAllExtensions(
-        (com.google.protobuf.ExtensionRegistryLite) registry);
+    );
   }
   public interface MsgStoreCodeOrBuilder extends
       // @@protoc_insertion_point(interface_extends:terra.wasm.v1beta1.MsgStoreCode)

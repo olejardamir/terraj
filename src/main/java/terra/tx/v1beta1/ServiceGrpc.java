@@ -1,5 +1,7 @@
 package terra.tx.v1beta1;
 
+import io.grpc.stub.StreamObserver;
+
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
 /**
@@ -105,8 +107,7 @@ public final class ServiceGrpc {
      * EstimateFee simulates executing a transaction for estimating gas usage.
      * </pre>
      */
-    public void computeTax(terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse> responseObserver) {
+    public void computeTax(StreamObserver<ServiceOuterClass.ComputeTaxResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getComputeTaxMethod(), responseObserver);
     }
 
@@ -229,8 +230,8 @@ public final class ServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_COMPUTE_TAX:
-          serviceImpl.computeTax((terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest) request,
-              (io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>) responseObserver);
+          serviceImpl.computeTax(
+                  (io.grpc.stub.StreamObserver<terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
