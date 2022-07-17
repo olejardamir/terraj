@@ -66,7 +66,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -113,7 +113,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRateRequest_descriptor;
     }
@@ -174,7 +174,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -336,7 +336,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryExchangeRateRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRateRequest_descriptor;
       }
@@ -454,7 +454,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -573,13 +573,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -678,7 +678,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -725,7 +725,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRateResponse_descriptor;
     }
@@ -786,7 +786,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -949,7 +949,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryExchangeRateResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRateResponse_descriptor;
       }
@@ -1067,7 +1067,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -1186,13 +1186,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -1269,7 +1269,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -1310,7 +1310,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRatesRequest_descriptor;
     }
@@ -1325,7 +1325,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -1477,7 +1477,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryExchangeRatesRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRatesRequest_descriptor;
       }
@@ -1588,7 +1588,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -1611,13 +1611,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -1740,7 +1740,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -1794,7 +1794,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRatesResponse_descriptor;
     }
@@ -1869,7 +1869,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -2035,7 +2035,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryExchangeRatesResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRatesResponse_descriptor;
       }
@@ -2189,7 +2189,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -2524,13 +2524,13 @@ public final class QueryOuterClass {
         return exchangeRatesBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -2628,7 +2628,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -2675,7 +2675,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxRequest_descriptor;
     }
@@ -2736,7 +2736,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -2898,7 +2898,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryTobinTaxRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxRequest_descriptor;
       }
@@ -3016,7 +3016,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -3135,13 +3135,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -3240,7 +3240,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -3287,7 +3287,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxResponse_descriptor;
     }
@@ -3348,7 +3348,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -3511,7 +3511,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryTobinTaxResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxResponse_descriptor;
       }
@@ -3629,7 +3629,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -3748,13 +3748,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -3831,7 +3831,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -3872,7 +3872,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxesRequest_descriptor;
     }
@@ -3887,7 +3887,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -4039,7 +4039,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryTobinTaxesRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxesRequest_descriptor;
       }
@@ -4150,7 +4150,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -4173,13 +4173,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -4302,7 +4302,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -4356,7 +4356,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxesResponse_descriptor;
     }
@@ -4431,7 +4431,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -4597,7 +4597,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryTobinTaxesResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxesResponse_descriptor;
       }
@@ -4751,7 +4751,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -5086,13 +5086,13 @@ public final class QueryOuterClass {
         return tobinTaxesBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -5169,7 +5169,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -5210,7 +5210,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryActivesRequest_descriptor;
     }
@@ -5225,7 +5225,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -5377,7 +5377,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryActivesRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryActivesRequest_descriptor;
       }
@@ -5488,7 +5488,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -5511,13 +5511,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -5637,7 +5637,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -5691,7 +5691,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryActivesResponse_descriptor;
     }
@@ -5757,7 +5757,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -5927,7 +5927,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryActivesResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryActivesResponse_descriptor;
       }
@@ -6056,7 +6056,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -6226,13 +6226,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -6309,7 +6309,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -6350,7 +6350,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryVoteTargetsRequest_descriptor;
     }
@@ -6365,7 +6365,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -6517,7 +6517,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryVoteTargetsRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryVoteTargetsRequest_descriptor;
       }
@@ -6628,7 +6628,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -6651,13 +6651,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -6781,7 +6781,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -6835,7 +6835,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryVoteTargetsResponse_descriptor;
     }
@@ -6905,7 +6905,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -7075,7 +7075,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryVoteTargetsResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryVoteTargetsResponse_descriptor;
       }
@@ -7204,7 +7204,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -7383,13 +7383,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -7487,7 +7487,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -7534,7 +7534,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryFeederDelegationRequest_descriptor;
     }
@@ -7595,7 +7595,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -7757,7 +7757,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryFeederDelegationRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryFeederDelegationRequest_descriptor;
       }
@@ -7875,7 +7875,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -7994,13 +7994,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -8099,7 +8099,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -8146,7 +8146,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryFeederDelegationResponse_descriptor;
     }
@@ -8207,7 +8207,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -8370,7 +8370,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryFeederDelegationResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryFeederDelegationResponse_descriptor;
       }
@@ -8488,7 +8488,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -8607,13 +8607,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -8711,7 +8711,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -8758,7 +8758,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryMissCounterRequest_descriptor;
     }
@@ -8819,7 +8819,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -8981,7 +8981,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryMissCounterRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryMissCounterRequest_descriptor;
       }
@@ -9099,7 +9099,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -9218,13 +9218,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -9312,7 +9312,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -9358,7 +9358,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryMissCounterResponse_descriptor;
     }
@@ -9388,7 +9388,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -9553,7 +9553,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryMissCounterResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryMissCounterResponse_descriptor;
       }
@@ -9670,7 +9670,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -9736,13 +9736,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -9840,7 +9840,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -9887,7 +9887,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevoteRequest_descriptor;
     }
@@ -9948,7 +9948,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -10110,7 +10110,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregatePrevoteRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevoteRequest_descriptor;
       }
@@ -10228,7 +10228,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -10347,13 +10347,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -10458,7 +10458,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -10512,7 +10512,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevoteResponse_descriptor;
     }
@@ -10565,7 +10565,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -10734,7 +10734,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregatePrevoteResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevoteResponse_descriptor;
       }
@@ -10859,7 +10859,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -11036,13 +11036,13 @@ public final class QueryOuterClass {
         return aggregatePrevoteBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -11119,7 +11119,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -11160,7 +11160,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevotesRequest_descriptor;
     }
@@ -11175,7 +11175,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -11327,7 +11327,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregatePrevotesRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevotesRequest_descriptor;
       }
@@ -11438,7 +11438,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -11461,13 +11461,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -11590,7 +11590,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -11644,7 +11644,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevotesResponse_descriptor;
     }
@@ -11719,7 +11719,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -11885,7 +11885,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregatePrevotesResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevotesResponse_descriptor;
       }
@@ -12039,7 +12039,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -12374,13 +12374,13 @@ public final class QueryOuterClass {
         return aggregatePrevotesBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -12478,7 +12478,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -12525,7 +12525,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVoteRequest_descriptor;
     }
@@ -12586,7 +12586,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -12748,7 +12748,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregateVoteRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVoteRequest_descriptor;
       }
@@ -12866,7 +12866,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -12985,13 +12985,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -13096,7 +13096,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -13150,7 +13150,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVoteResponse_descriptor;
     }
@@ -13203,7 +13203,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -13372,7 +13372,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregateVoteResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVoteResponse_descriptor;
       }
@@ -13497,7 +13497,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -13674,13 +13674,13 @@ public final class QueryOuterClass {
         return aggregateVoteBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -13757,7 +13757,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -13798,7 +13798,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVotesRequest_descriptor;
     }
@@ -13813,7 +13813,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -13965,7 +13965,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregateVotesRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVotesRequest_descriptor;
       }
@@ -14076,7 +14076,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -14099,13 +14099,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -14228,7 +14228,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -14282,7 +14282,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVotesResponse_descriptor;
     }
@@ -14357,7 +14357,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -14523,7 +14523,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryAggregateVotesResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVotesResponse_descriptor;
       }
@@ -14677,7 +14677,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -15012,13 +15012,13 @@ public final class QueryOuterClass {
         return aggregateVotesBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -15095,7 +15095,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -15136,7 +15136,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryParamsRequest_descriptor;
     }
@@ -15151,7 +15151,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -15303,7 +15303,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryParamsRequest)
         terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryParamsRequest_descriptor;
       }
@@ -15414,7 +15414,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -15437,13 +15437,13 @@ public final class QueryOuterClass {
         return this;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -15547,7 +15547,7 @@ public final class QueryOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -15601,7 +15601,7 @@ public final class QueryOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryParamsResponse_descriptor;
     }
@@ -15654,7 +15654,7 @@ public final class QueryOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -15822,7 +15822,7 @@ public final class QueryOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.oracle.v1beta1.QueryParamsResponse)
         terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryParamsResponse_descriptor;
       }
@@ -15947,7 +15947,7 @@ public final class QueryOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -16124,13 +16124,13 @@ public final class QueryOuterClass {
         return paramsBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }

@@ -73,7 +73,7 @@ public final class ServiceOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -127,7 +127,7 @@ public final class ServiceOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.tx.v1beta1.ServiceOuterClass.internal_static_terra_tx_v1beta1_ComputeTaxRequest_descriptor;
     }
@@ -180,7 +180,7 @@ public final class ServiceOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -349,7 +349,7 @@ public final class ServiceOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.tx.v1beta1.ComputeTaxRequest)
         terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequestOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.tx.v1beta1.ServiceOuterClass.internal_static_terra_tx_v1beta1_ComputeTaxRequest_descriptor;
       }
@@ -474,7 +474,7 @@ public final class ServiceOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -651,13 +651,13 @@ public final class ServiceOuterClass {
         return txBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
@@ -780,7 +780,7 @@ public final class ServiceOuterClass {
     }
 
     @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
+    public com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
     }
@@ -834,7 +834,7 @@ public final class ServiceOuterClass {
         makeExtensionsImmutable();
       }
     }
-    public static final com.google.protobuf.Descriptors.Descriptor
+    public static com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return terra.tx.v1beta1.ServiceOuterClass.internal_static_terra_tx_v1beta1_ComputeTaxResponse_descriptor;
     }
@@ -909,7 +909,7 @@ public final class ServiceOuterClass {
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
-    public final boolean isInitialized() {
+    public boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
@@ -1075,7 +1075,7 @@ public final class ServiceOuterClass {
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:terra.tx.v1beta1.ComputeTaxResponse)
         terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponseOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
+      public static com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
         return terra.tx.v1beta1.ServiceOuterClass.internal_static_terra_tx_v1beta1_ComputeTaxResponse_descriptor;
       }
@@ -1229,7 +1229,7 @@ public final class ServiceOuterClass {
       }
 
       @java.lang.Override
-      public final boolean isInitialized() {
+      public boolean isInitialized() {
         return true;
       }
 
@@ -1564,13 +1564,13 @@ public final class ServiceOuterClass {
         return taxAmountBuilder_;
       }
       @java.lang.Override
-      public final Builder setUnknownFields(
+      public Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
       @java.lang.Override
-      public final Builder mergeUnknownFields(
+      public Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
       }
