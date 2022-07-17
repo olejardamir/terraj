@@ -222,15 +222,13 @@ public final class Genesis {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxRate_ = s;
+                taxRate_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              rewardWeight_ = s;
+                rewardWeight_ = input.readStringRequireUtf8();
               break;
             }
             case 34: {
@@ -803,8 +801,7 @@ public final class Genesis {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -2507,15 +2504,13 @@ public final class Genesis {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              denom_ = s;
+                denom_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxCap_ = s;
+                taxCap_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -2786,8 +2781,7 @@ public final class Genesis {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -3253,21 +3247,18 @@ public final class Genesis {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxReward_ = s;
+                taxReward_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              seigniorageReward_ = s;
+                seigniorageReward_ = input.readStringRequireUtf8();
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              totalStakedLuna_ = s;
+                totalStakedLuna_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -3609,8 +3600,7 @@ public final class Genesis {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

@@ -238,8 +238,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -503,9 +502,8 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxRate_ = s;
+                taxRate_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -728,8 +726,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1084,9 +1081,8 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              denom_ = s;
+                denom_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1317,8 +1313,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1685,9 +1680,8 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxCap_ = s;
+                taxCap_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1910,8 +1904,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -2416,8 +2409,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -2694,15 +2686,13 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              denom_ = s;
+                denom_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              taxCap_ = s;
+                taxCap_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -2973,8 +2963,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -3654,8 +3643,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -4363,8 +4351,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -4628,9 +4615,8 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              rewardWeight_ = s;
+                rewardWeight_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -4853,8 +4839,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -5359,8 +5344,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -5873,8 +5857,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -6582,8 +6565,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -6847,9 +6829,8 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              seigniorageProceeds_ = s;
+                seigniorageProceeds_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -7072,8 +7053,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -7578,8 +7558,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -7856,15 +7835,13 @@ public final class QueryOuterClass {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              trlYear_ = s;
+                trlYear_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              trlMonth_ = s;
+                trlMonth_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -8135,8 +8112,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -8724,8 +8700,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -9240,8 +9215,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

@@ -167,15 +167,13 @@ public final class Treasury {
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              seigniorageBurdenTarget_ = s;
+                seigniorageBurdenTarget_ = input.readStringRequireUtf8();
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              miningIncrement_ = s;
+                miningIncrement_ = input.readStringRequireUtf8();
               break;
             }
             case 40: {
@@ -614,8 +612,7 @@ public final class Treasury {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1460,15 +1457,13 @@ public final class Treasury {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              rateMin_ = s;
+                rateMin_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              rateMax_ = s;
+                rateMax_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
@@ -1485,9 +1480,8 @@ public final class Treasury {
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              changeRateMax_ = s;
+                changeRateMax_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1848,8 +1842,7 @@ public final class Treasury {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -2743,8 +2736,7 @@ public final class Treasury {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -3544,8 +3536,7 @@ public final class Treasury {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

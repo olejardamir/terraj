@@ -168,15 +168,13 @@ public final class Oracle {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              voteThreshold_ = s;
+                voteThreshold_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              rewardBand_ = s;
+                rewardBand_ = input.readStringRequireUtf8();
               break;
             }
             case 32: {
@@ -194,9 +192,8 @@ public final class Oracle {
               break;
             }
             case 50: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              slashFraction_ = s;
+                slashFraction_ = input.readStringRequireUtf8();
               break;
             }
             case 56: {
@@ -205,9 +202,8 @@ public final class Oracle {
               break;
             }
             case 66: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              minValidPerWindow_ = s;
+                minValidPerWindow_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -699,8 +695,7 @@ public final class Oracle {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1705,15 +1700,13 @@ public final class Oracle {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              name_ = s;
+                name_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              tobinTax_ = s;
+                tobinTax_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1984,8 +1977,7 @@ public final class Oracle {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -2435,15 +2427,13 @@ public final class Oracle {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              hash_ = s;
+                hash_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              voter_ = s;
+                voter_ = input.readStringRequireUtf8();
               break;
             }
             case 24: {
@@ -2742,8 +2732,7 @@ public final class Oracle {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -3247,9 +3236,8 @@ public final class Oracle {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              voter_ = s;
+                voter_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -3528,8 +3516,7 @@ public final class Oracle {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -4175,15 +4162,13 @@ public final class Oracle {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              denom_ = s;
+                denom_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              exchangeRate_ = s;
+                exchangeRate_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -4454,8 +4439,7 @@ public final class Oracle {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

@@ -340,8 +340,7 @@ public final class Wasm {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -754,9 +753,8 @@ public final class Wasm {
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              creator_ = s;
+                creator_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1040,8 +1038,7 @@ public final class Wasm {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1579,21 +1576,18 @@ public final class Wasm {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              address_ = s;
+                address_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              creator_ = s;
+                creator_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              admin_ = s;
+                admin_ = input.readStringRequireUtf8();
               break;
             }
             case 32: {
@@ -1999,8 +1993,7 @@ public final class Wasm {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

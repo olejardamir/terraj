@@ -108,9 +108,8 @@ public final class Tx {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              trader_ = s;
+                trader_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
@@ -127,9 +126,8 @@ public final class Tx {
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              askDenom_ = s;
+                askDenom_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -442,8 +440,7 @@ public final class Tx {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1302,8 +1299,7 @@ public final class Tx {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1871,15 +1867,13 @@ public final class Tx {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              fromAddress_ = s;
+                fromAddress_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              toAddress_ = s;
+                toAddress_ = input.readStringRequireUtf8();
               break;
             }
             case 26: {
@@ -1896,9 +1890,8 @@ public final class Tx {
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              askDenom_ = s;
+                askDenom_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -2259,8 +2252,7 @@ public final class Tx {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -3202,8 +3194,7 @@ public final class Tx {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>

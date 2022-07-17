@@ -400,8 +400,7 @@ public final class Vesting {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1105,9 +1104,8 @@ public final class Vesting {
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              ratio_ = s;
+                ratio_ = input.readStringRequireUtf8();
               break;
             }
             default: {
@@ -1376,8 +1374,7 @@ public final class Vesting {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
@@ -1823,9 +1820,8 @@ public final class Vesting {
               done = true;
               break;
             case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
 
-              denom_ = s;
+                denom_ = input.readStringRequireUtf8();
               break;
             }
             case 18: {
@@ -2113,8 +2109,7 @@ public final class Vesting {
     @java.lang.Override
     protected Builder newBuilderForType(
         com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
+        return new Builder(parent);
     }
     /**
      * <pre>
