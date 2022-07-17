@@ -43,7 +43,7 @@ public final class ServiceGrpc {
                   terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new ServiceMethodDescriptorSupplier("ComputeTax"))
+              .setSchemaDescriptor(new ServiceMethodDescriptorSupplier())
               .build();
         }
       }
@@ -119,7 +119,7 @@ public final class ServiceGrpc {
               new MethodHandlers<
                 terra.tx.v1beta1.ServiceOuterClass.ComputeTaxRequest,
                 terra.tx.v1beta1.ServiceOuterClass.ComputeTaxResponse>(
-                  this, METHODID_COMPUTE_TAX)))
+                  this)))
           .build();
     }
   }
@@ -220,9 +220,9 @@ public final class ServiceGrpc {
     private final ServiceImplBase serviceImpl;
     private final int methodId;
 
-    MethodHandlers(ServiceImplBase serviceImpl, int methodId) {
+    MethodHandlers(ServiceImplBase serviceImpl) {
       this.serviceImpl = serviceImpl;
-      this.methodId = methodId;
+      this.methodId = ServiceGrpc.METHODID_COMPUTE_TAX;
     }
 
     @java.lang.Override
@@ -274,8 +274,8 @@ public final class ServiceGrpc {
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
     private final String methodName;
 
-    ServiceMethodDescriptorSupplier(String methodName) {
-      this.methodName = methodName;
+    ServiceMethodDescriptorSupplier() {
+      this.methodName = "ComputeTax";
     }
 
     @java.lang.Override
