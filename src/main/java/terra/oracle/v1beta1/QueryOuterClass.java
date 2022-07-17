@@ -5796,7 +5796,7 @@ public final class QueryOuterClass {
           dataSize += computeStringSizeNoTag(actives_.getRaw(i));
         }
         size += dataSize;
-        size += 1 * getActivesList().size();
+        size += getActivesList().size();
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -6946,7 +6946,7 @@ public final class QueryOuterClass {
           dataSize += computeStringSizeNoTag(voteTargets_.getRaw(i));
         }
         size += dataSize;
-        size += 1 * getVoteTargetsList().size();
+        size += getVoteTargetsList().size();
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
