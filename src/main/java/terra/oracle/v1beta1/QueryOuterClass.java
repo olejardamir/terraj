@@ -1276,18 +1276,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -3823,18 +3819,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -5156,18 +5148,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -6288,18 +6276,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -11062,18 +11046,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -13686,18 +13666,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
@@ -15019,18 +14995,14 @@ public final class QueryOuterClass {
         boolean done = false;
         while (!done) {
           int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownField(
-                  input, unknownFields, extensionRegistry, tag)) {
+            if (tag == 0) {
                 done = true;
-              }
-              break;
+            } else {
+                if (!parseUnknownField(
+                        input, unknownFields, extensionRegistry, tag)) {
+                    done = true;
+                }
             }
-          }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
