@@ -93,9 +93,6 @@ public final class Genesis {
     private Genesis() {
     }
 
-    public static void registerAllExtensions() {
-    }
-
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -3221,9 +3218,6 @@ public final class Genesis {
                                 terra.treasury.v1beta1.Genesis.TaxCap.class, terra.treasury.v1beta1.Genesis.TaxCap.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -4053,9 +4047,6 @@ public final class Genesis {
                 return terra.treasury.v1beta1.Genesis.internal_static_terra_treasury_v1beta1_EpochState_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.treasury.v1beta1.Genesis.EpochState.class, terra.treasury.v1beta1.Genesis.EpochState.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

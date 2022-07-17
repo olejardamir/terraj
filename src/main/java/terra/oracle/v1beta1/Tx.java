@@ -123,9 +123,6 @@ public final class Tx {
     private Tx() {
     }
 
-    public static void registerAllExtensions() {
-    }
-
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -784,9 +781,6 @@ public final class Tx {
                 return terra.oracle.v1beta1.Tx.internal_static_terra_oracle_v1beta1_MsgAggregateExchangeRatePrevote_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.class, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -1502,9 +1496,6 @@ public final class Tx {
                                 terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.class, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -2182,9 +2173,6 @@ public final class Tx {
                 return terra.oracle.v1beta1.Tx.internal_static_terra_oracle_v1beta1_MsgAggregateExchangeRateVote_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.class, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -2991,9 +2979,6 @@ public final class Tx {
                                 terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.class, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -3555,9 +3540,6 @@ public final class Tx {
                 return terra.oracle.v1beta1.Tx.internal_static_terra_oracle_v1beta1_MsgDelegateFeedConsent_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent.class, terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -4180,9 +4162,6 @@ public final class Tx {
                 return terra.oracle.v1beta1.Tx.internal_static_terra_oracle_v1beta1_MsgDelegateFeedConsentResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.class, terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

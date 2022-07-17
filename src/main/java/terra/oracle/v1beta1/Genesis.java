@@ -101,13 +101,9 @@ public final class Genesis {
     private Genesis() {
     }
 
-    public static void registerAllExtensions() {
-    }
-
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-        );
+
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -3680,13 +3676,11 @@ public final class Genesis {
 
             // Construct using terra.oracle.v1beta1.Genesis.FeederDelegation.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -3700,9 +3694,6 @@ public final class Genesis {
                 return terra.oracle.v1beta1.Genesis.internal_static_terra_oracle_v1beta1_FeederDelegation_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Genesis.FeederDelegation.class, terra.oracle.v1beta1.Genesis.FeederDelegation.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -4399,13 +4390,11 @@ public final class Genesis {
 
             // Construct using terra.oracle.v1beta1.Genesis.MissCounter.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -4419,9 +4408,6 @@ public final class Genesis {
                 return terra.oracle.v1beta1.Genesis.internal_static_terra_oracle_v1beta1_MissCounter_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Genesis.MissCounter.class, terra.oracle.v1beta1.Genesis.MissCounter.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -5096,13 +5082,11 @@ public final class Genesis {
 
             // Construct using terra.oracle.v1beta1.Genesis.TobinTax.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -5116,9 +5100,6 @@ public final class Genesis {
                 return terra.oracle.v1beta1.Genesis.internal_static_terra_oracle_v1beta1_TobinTax_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Genesis.TobinTax.class, terra.oracle.v1beta1.Genesis.TobinTax.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

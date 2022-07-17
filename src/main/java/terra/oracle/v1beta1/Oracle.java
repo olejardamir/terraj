@@ -127,13 +127,8 @@ public final class Oracle {
     private Oracle() {
     }
 
-    public static void registerAllExtensions() {
-    }
-
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-        );
     }
 
     public static com.google.protobuf.Descriptors.FileDescriptor
@@ -2449,13 +2444,11 @@ public final class Oracle {
 
             // Construct using terra.oracle.v1beta1.Oracle.Denom.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -2469,9 +2462,6 @@ public final class Oracle {
                 return terra.oracle.v1beta1.Oracle.internal_static_terra_oracle_v1beta1_Denom_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Oracle.Denom.class, terra.oracle.v1beta1.Oracle.Denom.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -3228,13 +3218,11 @@ public final class Oracle {
 
             // Construct using terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -3248,9 +3236,6 @@ public final class Oracle {
                 return terra.oracle.v1beta1.Oracle.internal_static_terra_oracle_v1beta1_AggregateExchangeRatePrevote_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote.class, terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -4987,13 +4972,11 @@ public final class Oracle {
 
             // Construct using terra.oracle.v1beta1.Oracle.ExchangeRateTuple.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -5007,9 +4990,6 @@ public final class Oracle {
                 return terra.oracle.v1beta1.Oracle.internal_static_terra_oracle_v1beta1_ExchangeRateTuple_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.Oracle.ExchangeRateTuple.class, terra.oracle.v1beta1.Oracle.ExchangeRateTuple.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

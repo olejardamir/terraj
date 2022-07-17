@@ -429,9 +429,6 @@ public final class QueryOuterClass {
     private QueryOuterClass() {
     }
 
-    public static void registerAllExtensions() {
-    }
-
     public static void registerAllExtensions(
             com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
@@ -1530,9 +1527,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -2157,9 +2151,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -2710,9 +2701,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryExchangeRatesRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -4143,9 +4131,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -4770,9 +4755,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -5323,9 +5305,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryTobinTaxesRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -6686,9 +6665,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -7224,9 +7200,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryActivesResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -7851,9 +7824,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -8394,9 +8364,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryVoteTargetsResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -9100,9 +9067,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -9727,9 +9691,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -10352,9 +10313,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -10947,9 +10905,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -11512,9 +11467,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevoteRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -12149,9 +12101,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -12766,9 +12715,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregatePrevotesRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -14199,9 +14145,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -14834,9 +14777,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -15451,9 +15391,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryAggregateVotesRequest_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
@@ -16814,9 +16751,6 @@ public final class QueryOuterClass {
                                 terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.class, terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.Builder.class);
             }
 
-            private void maybeForceBuilderInitialization() {
-            }
-
             @java.lang.Override
             public Builder clear() {
                 super.clear();
@@ -17333,9 +17267,6 @@ public final class QueryOuterClass {
                 return terra.oracle.v1beta1.QueryOuterClass.internal_static_terra_oracle_v1beta1_QueryParamsResponse_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.class, terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override

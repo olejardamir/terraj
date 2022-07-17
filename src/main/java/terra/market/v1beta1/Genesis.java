@@ -49,10 +49,6 @@ public final class Genesis {
     }
 
     public static void registerAllExtensions() {
-    }
-
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
         registerAllExtensions(
         );
     }
@@ -509,13 +505,11 @@ public final class Genesis {
 
             // Construct using terra.market.v1beta1.Genesis.GenesisState.newBuilder()
             private Builder() {
-                maybeForceBuilderInitialization();
             }
 
             private Builder(
                     com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
                 super(parent);
-                maybeForceBuilderInitialization();
             }
 
             public static com.google.protobuf.Descriptors.Descriptor
@@ -529,9 +523,6 @@ public final class Genesis {
                 return terra.market.v1beta1.Genesis.internal_static_terra_market_v1beta1_GenesisState_fieldAccessorTable
                         .ensureFieldAccessorsInitialized(
                                 terra.market.v1beta1.Genesis.GenesisState.class, terra.market.v1beta1.Genesis.GenesisState.Builder.class);
-            }
-
-            private void maybeForceBuilderInitialization() {
             }
 
             @java.lang.Override
