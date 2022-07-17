@@ -124,7 +124,7 @@ public final class Vesting {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                vestingSchedules_ = new java.util.ArrayList<terra.vesting.v1beta1.Vesting.VestingSchedule>();
+                vestingSchedules_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               vestingSchedules_.add(
@@ -249,8 +249,8 @@ public final class Vesting {
       if (baseVestingAccount_ != null) {
         output.writeMessage(1, getBaseVestingAccount());
       }
-      for (int i = 0; i < vestingSchedules_.size(); i++) {
-        output.writeMessage(2, vestingSchedules_.get(i));
+      for (VestingSchedule vestingSchedule : vestingSchedules_) {
+        output.writeMessage(2, vestingSchedule);
       }
       unknownFields.writeTo(output);
     }
@@ -265,9 +265,9 @@ public final class Vesting {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getBaseVestingAccount());
       }
-      for (int i = 0; i < vestingSchedules_.size(); i++) {
+      for (VestingSchedule vestingSchedule : vestingSchedules_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, vestingSchedules_.get(i));
+                .computeMessageSize(2, vestingSchedule);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -718,8 +718,7 @@ public final class Vesting {
           cosmos.vesting.v1beta1.Vesting.BaseVestingAccount, cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder, cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder> 
           getBaseVestingAccountFieldBuilder() {
         if (baseVestingAccountBuilder_ == null) {
-          baseVestingAccountBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.vesting.v1beta1.Vesting.BaseVestingAccount, cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder, cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder>(
+          baseVestingAccountBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getBaseVestingAccount(),
                   getParentForChildren(),
                   isClean());
@@ -732,7 +731,7 @@ public final class Vesting {
         java.util.Collections.emptyList();
       private void ensureVestingSchedulesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          vestingSchedules_ = new java.util.ArrayList<terra.vesting.v1beta1.Vesting.VestingSchedule>(vestingSchedules_);
+          vestingSchedules_ = new java.util.ArrayList<>(vestingSchedules_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -957,8 +956,7 @@ public final class Vesting {
           terra.vesting.v1beta1.Vesting.VestingSchedule, terra.vesting.v1beta1.Vesting.VestingSchedule.Builder, terra.vesting.v1beta1.Vesting.VestingScheduleOrBuilder> 
           getVestingSchedulesFieldBuilder() {
         if (vestingSchedulesBuilder_ == null) {
-          vestingSchedulesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.vesting.v1beta1.Vesting.VestingSchedule, terra.vesting.v1beta1.Vesting.VestingSchedule.Builder, terra.vesting.v1beta1.Vesting.VestingScheduleOrBuilder>(
+          vestingSchedulesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   vestingSchedules_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -994,14 +992,14 @@ public final class Vesting {
     }
 
     private static final com.google.protobuf.Parser<LazyGradedVestingAccount>
-        PARSER = new com.google.protobuf.AbstractParser<LazyGradedVestingAccount>() {
-      @java.lang.Override
-      public LazyGradedVestingAccount parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new LazyGradedVestingAccount(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public LazyGradedVestingAccount parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new LazyGradedVestingAccount(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<LazyGradedVestingAccount> parser() {
@@ -1712,14 +1710,14 @@ public final class Vesting {
     }
 
     private static final com.google.protobuf.Parser<Schedule>
-        PARSER = new com.google.protobuf.AbstractParser<Schedule>() {
-      @java.lang.Override
-      public Schedule parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Schedule(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public Schedule parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new Schedule(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<Schedule> parser() {
@@ -1838,7 +1836,7 @@ public final class Vesting {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                schedules_ = new java.util.ArrayList<terra.vesting.v1beta1.Vesting.Schedule>();
+                schedules_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               schedules_.add(
@@ -1975,8 +1973,8 @@ public final class Vesting {
       if (!getDenomBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, denom_);
       }
-      for (int i = 0; i < schedules_.size(); i++) {
-        output.writeMessage(2, schedules_.get(i));
+      for (Schedule schedule : schedules_) {
+        output.writeMessage(2, schedule);
       }
       unknownFields.writeTo(output);
     }
@@ -1990,9 +1988,9 @@ public final class Vesting {
       if (!getDenomBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, denom_);
       }
-      for (int i = 0; i < schedules_.size(); i++) {
+      for (Schedule schedule : schedules_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, schedules_.get(i));
+                .computeMessageSize(2, schedule);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2401,7 +2399,7 @@ public final class Vesting {
         java.util.Collections.emptyList();
       private void ensureSchedulesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          schedules_ = new java.util.ArrayList<terra.vesting.v1beta1.Vesting.Schedule>(schedules_);
+          schedules_ = new java.util.ArrayList<>(schedules_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -2626,8 +2624,7 @@ public final class Vesting {
           terra.vesting.v1beta1.Vesting.Schedule, terra.vesting.v1beta1.Vesting.Schedule.Builder, terra.vesting.v1beta1.Vesting.ScheduleOrBuilder> 
           getSchedulesFieldBuilder() {
         if (schedulesBuilder_ == null) {
-          schedulesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.vesting.v1beta1.Vesting.Schedule, terra.vesting.v1beta1.Vesting.Schedule.Builder, terra.vesting.v1beta1.Vesting.ScheduleOrBuilder>(
+          schedulesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   schedules_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -2663,14 +2660,14 @@ public final class Vesting {
     }
 
     private static final com.google.protobuf.Parser<VestingSchedule>
-        PARSER = new com.google.protobuf.AbstractParser<VestingSchedule>() {
-      @java.lang.Override
-      public VestingSchedule parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new VestingSchedule(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public VestingSchedule parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new VestingSchedule(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<VestingSchedule> parser() {

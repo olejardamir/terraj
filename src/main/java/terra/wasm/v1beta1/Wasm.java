@@ -627,12 +627,12 @@ public final class Wasm {
     }
 
     private static final com.google.protobuf.Parser<Params>
-        PARSER = new com.google.protobuf.AbstractParser<Params>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public Params parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new Params(input, extensionRegistry);
       }
     };
@@ -1424,12 +1424,12 @@ public final class Wasm {
     }
 
     private static final com.google.protobuf.Parser<CodeInfo>
-        PARSER = new com.google.protobuf.AbstractParser<CodeInfo>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public CodeInfo parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new CodeInfo(input, extensionRegistry);
       }
     };
@@ -2593,12 +2593,12 @@ public final class Wasm {
     }
 
     private static final com.google.protobuf.Parser<ContractInfo>
-        PARSER = new com.google.protobuf.AbstractParser<ContractInfo>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public ContractInfo parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new ContractInfo(input, extensionRegistry);
       }
     };

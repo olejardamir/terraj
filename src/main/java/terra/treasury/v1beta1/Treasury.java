@@ -933,8 +933,7 @@ public final class Treasury {
           terra.treasury.v1beta1.Treasury.PolicyConstraints, terra.treasury.v1beta1.Treasury.PolicyConstraints.Builder, terra.treasury.v1beta1.Treasury.PolicyConstraintsOrBuilder> 
           getTaxPolicyFieldBuilder() {
         if (taxPolicyBuilder_ == null) {
-          taxPolicyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.treasury.v1beta1.Treasury.PolicyConstraints, terra.treasury.v1beta1.Treasury.PolicyConstraints.Builder, terra.treasury.v1beta1.Treasury.PolicyConstraintsOrBuilder>(
+          taxPolicyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getTaxPolicy(),
                   getParentForChildren(),
                   isClean());
@@ -1052,8 +1051,7 @@ public final class Treasury {
           terra.treasury.v1beta1.Treasury.PolicyConstraints, terra.treasury.v1beta1.Treasury.PolicyConstraints.Builder, terra.treasury.v1beta1.Treasury.PolicyConstraintsOrBuilder> 
           getRewardPolicyFieldBuilder() {
         if (rewardPolicyBuilder_ == null) {
-          rewardPolicyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.treasury.v1beta1.Treasury.PolicyConstraints, terra.treasury.v1beta1.Treasury.PolicyConstraints.Builder, terra.treasury.v1beta1.Treasury.PolicyConstraintsOrBuilder>(
+          rewardPolicyBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getRewardPolicy(),
                   getParentForChildren(),
                   isClean());
@@ -1333,14 +1331,14 @@ public final class Treasury {
     }
 
     private static final com.google.protobuf.Parser<Params>
-        PARSER = new com.google.protobuf.AbstractParser<Params>() {
-      @java.lang.Override
-      public Params parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Params(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public Params parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new Params(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<Params> parser() {
@@ -2300,8 +2298,7 @@ public final class Treasury {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getCapFieldBuilder() {
         if (capBuilder_ == null) {
-          capBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          capBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getCap(),
                   getParentForChildren(),
                   isClean());
@@ -2412,14 +2409,14 @@ public final class Treasury {
     }
 
     private static final com.google.protobuf.Parser<PolicyConstraints>
-        PARSER = new com.google.protobuf.AbstractParser<PolicyConstraints>() {
-      @java.lang.Override
-      public PolicyConstraints parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new PolicyConstraints(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public PolicyConstraints parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new PolicyConstraints(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<PolicyConstraints> parser() {
@@ -2520,7 +2517,7 @@ public final class Treasury {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               taxProceeds_.add(
@@ -2616,8 +2613,8 @@ public final class Treasury {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < taxProceeds_.size(); i++) {
-        output.writeMessage(1, taxProceeds_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxProceeds_) {
+        output.writeMessage(1, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -2628,9 +2625,9 @@ public final class Treasury {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < taxProceeds_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxProceeds_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, taxProceeds_.get(i));
+                .computeMessageSize(1, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -2953,7 +2950,7 @@ public final class Treasury {
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(taxProceeds_);
+          taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -3178,8 +3175,7 @@ public final class Treasury {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getTaxProceedsFieldBuilder() {
         if (taxProceedsBuilder_ == null) {
-          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxProceeds_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3215,14 +3211,14 @@ public final class Treasury {
     }
 
     private static final com.google.protobuf.Parser<EpochTaxProceeds>
-        PARSER = new com.google.protobuf.AbstractParser<EpochTaxProceeds>() {
-      @java.lang.Override
-      public EpochTaxProceeds parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EpochTaxProceeds(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public EpochTaxProceeds parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new EpochTaxProceeds(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<EpochTaxProceeds> parser() {
@@ -3323,7 +3319,7 @@ public final class Treasury {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                issuance_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                issuance_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               issuance_.add(
@@ -3419,8 +3415,8 @@ public final class Treasury {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < issuance_.size(); i++) {
-        output.writeMessage(1, issuance_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : issuance_) {
+        output.writeMessage(1, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -3431,9 +3427,9 @@ public final class Treasury {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < issuance_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : issuance_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, issuance_.get(i));
+                .computeMessageSize(1, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3756,7 +3752,7 @@ public final class Treasury {
         java.util.Collections.emptyList();
       private void ensureIssuanceIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          issuance_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(issuance_);
+          issuance_ = new java.util.ArrayList<>(issuance_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -3981,8 +3977,7 @@ public final class Treasury {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getIssuanceFieldBuilder() {
         if (issuanceBuilder_ == null) {
-          issuanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          issuanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   issuance_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4018,14 +4013,14 @@ public final class Treasury {
     }
 
     private static final com.google.protobuf.Parser<EpochInitialIssuance>
-        PARSER = new com.google.protobuf.AbstractParser<EpochInitialIssuance>() {
-      @java.lang.Override
-      public EpochInitialIssuance parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EpochInitialIssuance(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public EpochInitialIssuance parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new EpochInitialIssuance(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<EpochInitialIssuance> parser() {

@@ -696,12 +696,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgStoreCode>
-        PARSER = new com.google.protobuf.AbstractParser<MsgStoreCode>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgStoreCode parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgStoreCode(input, extensionRegistry);
       }
     };
@@ -1213,12 +1213,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgStoreCodeResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgStoreCodeResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgStoreCodeResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgStoreCodeResponse(input, extensionRegistry);
       }
     };
@@ -2012,12 +2012,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgMigrateCode>
-        PARSER = new com.google.protobuf.AbstractParser<MsgMigrateCode>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgMigrateCode parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgMigrateCode(input, extensionRegistry);
       }
     };
@@ -2438,12 +2438,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgMigrateCodeResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgMigrateCodeResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgMigrateCodeResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgMigrateCodeResponse(input, extensionRegistry);
       }
     };
@@ -2652,7 +2652,7 @@ public final class Tx {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                initCoins_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                initCoins_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               initCoins_.add(
@@ -2902,8 +2902,8 @@ public final class Tx {
       if (!initMsg_.isEmpty()) {
         output.writeBytes(4, initMsg_);
       }
-      for (int i = 0; i < initCoins_.size(); i++) {
-        output.writeMessage(5, initCoins_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : initCoins_) {
+        output.writeMessage(5, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -2928,9 +2928,9 @@ public final class Tx {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(4, initMsg_);
       }
-      for (int i = 0; i < initCoins_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : initCoins_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, initCoins_.get(i));
+                .computeMessageSize(5, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3578,7 +3578,7 @@ public final class Tx {
         java.util.Collections.emptyList();
       private void ensureInitCoinsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          initCoins_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(initCoins_);
+          initCoins_ = new java.util.ArrayList<>(initCoins_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -3875,8 +3875,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getInitCoinsFieldBuilder() {
         if (initCoinsBuilder_ == null) {
-          initCoinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          initCoinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   initCoins_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3912,12 +3911,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgInstantiateContract>
-        PARSER = new com.google.protobuf.AbstractParser<MsgInstantiateContract>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgInstantiateContract parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgInstantiateContract(input, extensionRegistry);
       }
     };
@@ -4618,12 +4617,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgInstantiateContractResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgInstantiateContractResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgInstantiateContractResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgInstantiateContractResponse(input, extensionRegistry);
       }
     };
@@ -4816,7 +4815,7 @@ public final class Tx {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                coins_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                coins_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               coins_.add(
@@ -5048,8 +5047,8 @@ public final class Tx {
       if (!executeMsg_.isEmpty()) {
         output.writeBytes(3, executeMsg_);
       }
-      for (int i = 0; i < coins_.size(); i++) {
-        output.writeMessage(5, coins_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : coins_) {
+        output.writeMessage(5, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -5070,9 +5069,9 @@ public final class Tx {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(3, executeMsg_);
       }
-      for (int i = 0; i < coins_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : coins_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, coins_.get(i));
+                .computeMessageSize(5, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5665,7 +5664,7 @@ public final class Tx {
         java.util.Collections.emptyList();
       private void ensureCoinsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          coins_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(coins_);
+          coins_ = new java.util.ArrayList<>(coins_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -5962,8 +5961,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getCoinsFieldBuilder() {
         if (coinsBuilder_ == null) {
-          coinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          coinsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   coins_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -5999,12 +5997,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgExecuteContract>
-        PARSER = new com.google.protobuf.AbstractParser<MsgExecuteContract>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgExecuteContract parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgExecuteContract(input, extensionRegistry);
       }
     };
@@ -6519,12 +6517,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgExecuteContractResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgExecuteContractResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgExecuteContractResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgExecuteContractResponse(input, extensionRegistry);
       }
     };
@@ -7504,12 +7502,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgMigrateContract>
-        PARSER = new com.google.protobuf.AbstractParser<MsgMigrateContract>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgMigrateContract parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgMigrateContract(input, extensionRegistry);
       }
     };
@@ -8024,12 +8022,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgMigrateContractResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgMigrateContractResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgMigrateContractResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgMigrateContractResponse(input, extensionRegistry);
       }
     };
@@ -9010,12 +9008,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgUpdateContractAdmin>
-        PARSER = new com.google.protobuf.AbstractParser<MsgUpdateContractAdmin>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgUpdateContractAdmin parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgUpdateContractAdmin(input, extensionRegistry);
       }
     };
@@ -9436,12 +9434,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgUpdateContractAdminResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgUpdateContractAdminResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgUpdateContractAdminResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgUpdateContractAdminResponse(input, extensionRegistry);
       }
     };
@@ -10236,12 +10234,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgClearContractAdmin>
-        PARSER = new com.google.protobuf.AbstractParser<MsgClearContractAdmin>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgClearContractAdmin parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgClearContractAdmin(input, extensionRegistry);
       }
     };
@@ -10662,12 +10660,12 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgClearContractAdminResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgClearContractAdminResponse>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public MsgClearContractAdminResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new MsgClearContractAdminResponse(input, extensionRegistry);
       }
     };

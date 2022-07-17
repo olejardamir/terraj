@@ -689,8 +689,7 @@ public final class Genesis {
           terra.market.v1beta1.Market.Params, terra.market.v1beta1.Market.Params.Builder, terra.market.v1beta1.Market.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.market.v1beta1.Market.Params, terra.market.v1beta1.Market.Params.Builder, terra.market.v1beta1.Market.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -771,14 +770,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<GenesisState>
-        PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-      @java.lang.Override
-      public GenesisState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GenesisState(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public GenesisState parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GenesisState(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<GenesisState> parser() {

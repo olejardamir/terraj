@@ -633,14 +633,14 @@ public final class Market {
     }
 
     private static final com.google.protobuf.Parser<Params>
-        PARSER = new com.google.protobuf.AbstractParser<Params>() {
-      @java.lang.Override
-      public Params parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Params(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public Params parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new Params(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<Params> parser() {

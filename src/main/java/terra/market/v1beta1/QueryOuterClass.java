@@ -786,14 +786,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QuerySwapRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QuerySwapRequest>() {
-      @java.lang.Override
-      public QuerySwapRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QuerySwapRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QuerySwapRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QuerySwapRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QuerySwapRequest> parser() {
@@ -1439,8 +1439,7 @@ public final class QueryOuterClass {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getReturnCoinFieldBuilder() {
         if (returnCoinBuilder_ == null) {
-          returnCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          returnCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getReturnCoin(),
                   getParentForChildren(),
                   isClean());
@@ -1475,14 +1474,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QuerySwapResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QuerySwapResponse>() {
-      @java.lang.Override
-      public QuerySwapResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QuerySwapResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QuerySwapResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QuerySwapResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QuerySwapResponse> parser() {
@@ -1901,14 +1900,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTerraPoolDeltaRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTerraPoolDeltaRequest>() {
-      @java.lang.Override
-      public QueryTerraPoolDeltaRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTerraPoolDeltaRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTerraPoolDeltaRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTerraPoolDeltaRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTerraPoolDeltaRequest> parser() {
@@ -2421,14 +2420,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTerraPoolDeltaResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTerraPoolDeltaResponse>() {
-      @java.lang.Override
-      public QueryTerraPoolDeltaResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTerraPoolDeltaResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTerraPoolDeltaResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTerraPoolDeltaResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTerraPoolDeltaResponse> parser() {
@@ -2847,14 +2846,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryParamsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryParamsRequest>() {
-      @java.lang.Override
-      public QueryParamsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryParamsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryParamsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryParamsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryParamsRequest> parser() {
@@ -3500,8 +3499,7 @@ public final class QueryOuterClass {
           terra.market.v1beta1.Market.Params, terra.market.v1beta1.Market.Params.Builder, terra.market.v1beta1.Market.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.market.v1beta1.Market.Params, terra.market.v1beta1.Market.Params.Builder, terra.market.v1beta1.Market.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -3536,14 +3534,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryParamsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryParamsResponse>() {
-      @java.lang.Override
-      public QueryParamsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryParamsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryParamsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryParamsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryParamsResponse> parser() {

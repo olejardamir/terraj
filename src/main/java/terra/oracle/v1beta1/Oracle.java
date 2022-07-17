@@ -187,7 +187,7 @@ public final class Oracle {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                whitelist_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.Denom>();
+                whitelist_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               whitelist_.add(
@@ -497,8 +497,8 @@ public final class Oracle {
       if (rewardDistributionWindow_ != 0L) {
         output.writeUInt64(4, rewardDistributionWindow_);
       }
-      for (int i = 0; i < whitelist_.size(); i++) {
-        output.writeMessage(5, whitelist_.get(i));
+      for (Denom denom : whitelist_) {
+        output.writeMessage(5, denom);
       }
       if (!getSlashFractionBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, slashFraction_);
@@ -532,9 +532,9 @@ public final class Oracle {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(4, rewardDistributionWindow_);
       }
-      for (int i = 0; i < whitelist_.size(); i++) {
+      for (Denom denom : whitelist_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, whitelist_.get(i));
+                .computeMessageSize(5, denom);
       }
       if (!getSlashFractionBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, slashFraction_);
@@ -1157,7 +1157,7 @@ public final class Oracle {
         java.util.Collections.emptyList();
       private void ensureWhitelistIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          whitelist_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.Denom>(whitelist_);
+          whitelist_ = new java.util.ArrayList<>(whitelist_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -1382,8 +1382,7 @@ public final class Oracle {
           terra.oracle.v1beta1.Oracle.Denom, terra.oracle.v1beta1.Oracle.Denom.Builder, terra.oracle.v1beta1.Oracle.DenomOrBuilder> 
           getWhitelistFieldBuilder() {
         if (whitelistBuilder_ == null) {
-          whitelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.Denom, terra.oracle.v1beta1.Oracle.Denom.Builder, terra.oracle.v1beta1.Oracle.DenomOrBuilder>(
+          whitelistBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   whitelist_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1602,14 +1601,14 @@ public final class Oracle {
     }
 
     private static final com.google.protobuf.Parser<Params>
-        PARSER = new com.google.protobuf.AbstractParser<Params>() {
-      @java.lang.Override
-      public Params parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Params(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public Params parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new Params(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<Params> parser() {
@@ -2328,14 +2327,14 @@ public final class Oracle {
     }
 
     private static final com.google.protobuf.Parser<Denom>
-        PARSER = new com.google.protobuf.AbstractParser<Denom>() {
-      @java.lang.Override
-      public Denom parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Denom(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public Denom parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new Denom(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<Denom> parser() {
@@ -3129,14 +3128,14 @@ public final class Oracle {
     }
 
     private static final com.google.protobuf.Parser<AggregateExchangeRatePrevote>
-        PARSER = new com.google.protobuf.AbstractParser<AggregateExchangeRatePrevote>() {
-      @java.lang.Override
-      public AggregateExchangeRatePrevote parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AggregateExchangeRatePrevote(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public AggregateExchangeRatePrevote parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new AggregateExchangeRatePrevote(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<AggregateExchangeRatePrevote> parser() {
@@ -3250,7 +3249,7 @@ public final class Oracle {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                exchangeRateTuples_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.ExchangeRateTuple>();
+                exchangeRateTuples_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               exchangeRateTuples_.add(
@@ -3390,8 +3389,8 @@ public final class Oracle {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < exchangeRateTuples_.size(); i++) {
-        output.writeMessage(1, exchangeRateTuples_.get(i));
+      for (ExchangeRateTuple exchangeRateTuple : exchangeRateTuples_) {
+        output.writeMessage(1, exchangeRateTuple);
       }
       if (!getVoterBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, voter_);
@@ -3405,9 +3404,9 @@ public final class Oracle {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < exchangeRateTuples_.size(); i++) {
+      for (ExchangeRateTuple exchangeRateTuple : exchangeRateTuples_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, exchangeRateTuples_.get(i));
+                .computeMessageSize(1, exchangeRateTuple);
       }
       if (!getVoterBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, voter_);
@@ -3744,7 +3743,7 @@ public final class Oracle {
         java.util.Collections.emptyList();
       private void ensureExchangeRateTuplesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          exchangeRateTuples_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.ExchangeRateTuple>(exchangeRateTuples_);
+          exchangeRateTuples_ = new java.util.ArrayList<>(exchangeRateTuples_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -3969,8 +3968,7 @@ public final class Oracle {
           terra.oracle.v1beta1.Oracle.ExchangeRateTuple, terra.oracle.v1beta1.Oracle.ExchangeRateTuple.Builder, terra.oracle.v1beta1.Oracle.ExchangeRateTupleOrBuilder> 
           getExchangeRateTuplesFieldBuilder() {
         if (exchangeRateTuplesBuilder_ == null) {
-          exchangeRateTuplesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.ExchangeRateTuple, terra.oracle.v1beta1.Oracle.ExchangeRateTuple.Builder, terra.oracle.v1beta1.Oracle.ExchangeRateTupleOrBuilder>(
+          exchangeRateTuplesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   exchangeRateTuples_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4082,14 +4080,14 @@ public final class Oracle {
     }
 
     private static final com.google.protobuf.Parser<AggregateExchangeRateVote>
-        PARSER = new com.google.protobuf.AbstractParser<AggregateExchangeRateVote>() {
-      @java.lang.Override
-      public AggregateExchangeRateVote parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new AggregateExchangeRateVote(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public AggregateExchangeRateVote parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new AggregateExchangeRateVote(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<AggregateExchangeRateVote> parser() {
@@ -4808,14 +4806,14 @@ public final class Oracle {
     }
 
     private static final com.google.protobuf.Parser<ExchangeRateTuple>
-        PARSER = new com.google.protobuf.AbstractParser<ExchangeRateTuple>() {
-      @java.lang.Override
-      public ExchangeRateTuple parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ExchangeRateTuple(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public ExchangeRateTuple parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ExchangeRateTuple(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<ExchangeRateTuple> parser() {

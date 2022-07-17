@@ -248,7 +248,7 @@ public final class Genesis {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                feederDelegations_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.FeederDelegation>();
+                feederDelegations_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               feederDelegations_.add(
@@ -257,7 +257,7 @@ public final class Genesis {
             }
             case 26: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                exchangeRates_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.ExchangeRateTuple>();
+                exchangeRates_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
               exchangeRates_.add(
@@ -266,7 +266,7 @@ public final class Genesis {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                missCounters_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.MissCounter>();
+                missCounters_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000004;
               }
               missCounters_.add(
@@ -275,7 +275,7 @@ public final class Genesis {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                aggregateExchangeRatePrevotes_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote>();
+                aggregateExchangeRatePrevotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000008;
               }
               aggregateExchangeRatePrevotes_.add(
@@ -284,7 +284,7 @@ public final class Genesis {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000010) != 0)) {
-                aggregateExchangeRateVotes_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote>();
+                aggregateExchangeRateVotes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000010;
               }
               aggregateExchangeRateVotes_.add(
@@ -293,7 +293,7 @@ public final class Genesis {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000020) != 0)) {
-                tobinTaxes_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.TobinTax>();
+                tobinTaxes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000020;
               }
               tobinTaxes_.add(
@@ -633,23 +633,23 @@ public final class Genesis {
       if (params_ != null) {
         output.writeMessage(1, getParams());
       }
-      for (int i = 0; i < feederDelegations_.size(); i++) {
-        output.writeMessage(2, feederDelegations_.get(i));
+      for (FeederDelegation feederDelegation : feederDelegations_) {
+        output.writeMessage(2, feederDelegation);
       }
-      for (int i = 0; i < exchangeRates_.size(); i++) {
-        output.writeMessage(3, exchangeRates_.get(i));
+      for (Oracle.ExchangeRateTuple exchangeRateTuple : exchangeRates_) {
+        output.writeMessage(3, exchangeRateTuple);
       }
-      for (int i = 0; i < missCounters_.size(); i++) {
-        output.writeMessage(4, missCounters_.get(i));
+      for (MissCounter missCounter : missCounters_) {
+        output.writeMessage(4, missCounter);
       }
-      for (int i = 0; i < aggregateExchangeRatePrevotes_.size(); i++) {
-        output.writeMessage(5, aggregateExchangeRatePrevotes_.get(i));
+      for (Oracle.AggregateExchangeRatePrevote aggregateExchangeRatePrevote : aggregateExchangeRatePrevotes_) {
+        output.writeMessage(5, aggregateExchangeRatePrevote);
       }
-      for (int i = 0; i < aggregateExchangeRateVotes_.size(); i++) {
-        output.writeMessage(6, aggregateExchangeRateVotes_.get(i));
+      for (Oracle.AggregateExchangeRateVote aggregateExchangeRateVote : aggregateExchangeRateVotes_) {
+        output.writeMessage(6, aggregateExchangeRateVote);
       }
-      for (int i = 0; i < tobinTaxes_.size(); i++) {
-        output.writeMessage(7, tobinTaxes_.get(i));
+      for (TobinTax tobinTax : tobinTaxes_) {
+        output.writeMessage(7, tobinTax);
       }
       unknownFields.writeTo(output);
     }
@@ -664,29 +664,29 @@ public final class Genesis {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getParams());
       }
-      for (int i = 0; i < feederDelegations_.size(); i++) {
+      for (FeederDelegation feederDelegation : feederDelegations_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, feederDelegations_.get(i));
+                .computeMessageSize(2, feederDelegation);
       }
-      for (int i = 0; i < exchangeRates_.size(); i++) {
+      for (Oracle.ExchangeRateTuple exchangeRateTuple : exchangeRates_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, exchangeRates_.get(i));
+                .computeMessageSize(3, exchangeRateTuple);
       }
-      for (int i = 0; i < missCounters_.size(); i++) {
+      for (MissCounter missCounter : missCounters_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, missCounters_.get(i));
+                .computeMessageSize(4, missCounter);
       }
-      for (int i = 0; i < aggregateExchangeRatePrevotes_.size(); i++) {
+      for (Oracle.AggregateExchangeRatePrevote aggregateExchangeRatePrevote : aggregateExchangeRatePrevotes_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, aggregateExchangeRatePrevotes_.get(i));
+                .computeMessageSize(5, aggregateExchangeRatePrevote);
       }
-      for (int i = 0; i < aggregateExchangeRateVotes_.size(); i++) {
+      for (Oracle.AggregateExchangeRateVote aggregateExchangeRateVote : aggregateExchangeRateVotes_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, aggregateExchangeRateVotes_.get(i));
+                .computeMessageSize(6, aggregateExchangeRateVote);
       }
-      for (int i = 0; i < tobinTaxes_.size(); i++) {
+      for (TobinTax tobinTax : tobinTaxes_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, tobinTaxes_.get(i));
+                .computeMessageSize(7, tobinTax);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1376,8 +1376,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Oracle.Params, terra.oracle.v1beta1.Oracle.Params.Builder, terra.oracle.v1beta1.Oracle.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.Params, terra.oracle.v1beta1.Oracle.Params.Builder, terra.oracle.v1beta1.Oracle.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -1390,7 +1389,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureFeederDelegationsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          feederDelegations_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.FeederDelegation>(feederDelegations_);
+          feederDelegations_ = new java.util.ArrayList<>(feederDelegations_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -1615,8 +1614,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Genesis.FeederDelegation, terra.oracle.v1beta1.Genesis.FeederDelegation.Builder, terra.oracle.v1beta1.Genesis.FeederDelegationOrBuilder> 
           getFeederDelegationsFieldBuilder() {
         if (feederDelegationsBuilder_ == null) {
-          feederDelegationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Genesis.FeederDelegation, terra.oracle.v1beta1.Genesis.FeederDelegation.Builder, terra.oracle.v1beta1.Genesis.FeederDelegationOrBuilder>(
+          feederDelegationsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   feederDelegations_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1630,7 +1628,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureExchangeRatesIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          exchangeRates_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.ExchangeRateTuple>(exchangeRates_);
+          exchangeRates_ = new java.util.ArrayList<>(exchangeRates_);
           bitField0_ |= 0x00000002;
          }
       }
@@ -1855,8 +1853,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Oracle.ExchangeRateTuple, terra.oracle.v1beta1.Oracle.ExchangeRateTuple.Builder, terra.oracle.v1beta1.Oracle.ExchangeRateTupleOrBuilder> 
           getExchangeRatesFieldBuilder() {
         if (exchangeRatesBuilder_ == null) {
-          exchangeRatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.ExchangeRateTuple, terra.oracle.v1beta1.Oracle.ExchangeRateTuple.Builder, terra.oracle.v1beta1.Oracle.ExchangeRateTupleOrBuilder>(
+          exchangeRatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   exchangeRates_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -1870,7 +1867,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureMissCountersIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          missCounters_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.MissCounter>(missCounters_);
+          missCounters_ = new java.util.ArrayList<>(missCounters_);
           bitField0_ |= 0x00000004;
          }
       }
@@ -2095,8 +2092,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Genesis.MissCounter, terra.oracle.v1beta1.Genesis.MissCounter.Builder, terra.oracle.v1beta1.Genesis.MissCounterOrBuilder> 
           getMissCountersFieldBuilder() {
         if (missCountersBuilder_ == null) {
-          missCountersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Genesis.MissCounter, terra.oracle.v1beta1.Genesis.MissCounter.Builder, terra.oracle.v1beta1.Genesis.MissCounterOrBuilder>(
+          missCountersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   missCounters_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -2110,7 +2106,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureAggregateExchangeRatePrevotesIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          aggregateExchangeRatePrevotes_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote>(aggregateExchangeRatePrevotes_);
+          aggregateExchangeRatePrevotes_ = new java.util.ArrayList<>(aggregateExchangeRatePrevotes_);
           bitField0_ |= 0x00000008;
          }
       }
@@ -2335,8 +2331,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote, terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote.Builder, terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevoteOrBuilder> 
           getAggregateExchangeRatePrevotesFieldBuilder() {
         if (aggregateExchangeRatePrevotesBuilder_ == null) {
-          aggregateExchangeRatePrevotesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote, terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevote.Builder, terra.oracle.v1beta1.Oracle.AggregateExchangeRatePrevoteOrBuilder>(
+          aggregateExchangeRatePrevotesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   aggregateExchangeRatePrevotes_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -2350,7 +2345,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureAggregateExchangeRateVotesIsMutable() {
         if (!((bitField0_ & 0x00000010) != 0)) {
-          aggregateExchangeRateVotes_ = new java.util.ArrayList<terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote>(aggregateExchangeRateVotes_);
+          aggregateExchangeRateVotes_ = new java.util.ArrayList<>(aggregateExchangeRateVotes_);
           bitField0_ |= 0x00000010;
          }
       }
@@ -2575,8 +2570,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote, terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote.Builder, terra.oracle.v1beta1.Oracle.AggregateExchangeRateVoteOrBuilder> 
           getAggregateExchangeRateVotesFieldBuilder() {
         if (aggregateExchangeRateVotesBuilder_ == null) {
-          aggregateExchangeRateVotesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote, terra.oracle.v1beta1.Oracle.AggregateExchangeRateVote.Builder, terra.oracle.v1beta1.Oracle.AggregateExchangeRateVoteOrBuilder>(
+          aggregateExchangeRateVotesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   aggregateExchangeRateVotes_,
                   ((bitField0_ & 0x00000010) != 0),
                   getParentForChildren(),
@@ -2590,7 +2584,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureTobinTaxesIsMutable() {
         if (!((bitField0_ & 0x00000020) != 0)) {
-          tobinTaxes_ = new java.util.ArrayList<terra.oracle.v1beta1.Genesis.TobinTax>(tobinTaxes_);
+          tobinTaxes_ = new java.util.ArrayList<>(tobinTaxes_);
           bitField0_ |= 0x00000020;
          }
       }
@@ -2815,8 +2809,7 @@ public final class Genesis {
           terra.oracle.v1beta1.Genesis.TobinTax, terra.oracle.v1beta1.Genesis.TobinTax.Builder, terra.oracle.v1beta1.Genesis.TobinTaxOrBuilder> 
           getTobinTaxesFieldBuilder() {
         if (tobinTaxesBuilder_ == null) {
-          tobinTaxesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.oracle.v1beta1.Genesis.TobinTax, terra.oracle.v1beta1.Genesis.TobinTax.Builder, terra.oracle.v1beta1.Genesis.TobinTaxOrBuilder>(
+          tobinTaxesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   tobinTaxes_,
                   ((bitField0_ & 0x00000020) != 0),
                   getParentForChildren(),
@@ -2852,14 +2845,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<GenesisState>
-        PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-      @java.lang.Override
-      public GenesisState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GenesisState(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public GenesisState parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GenesisState(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<GenesisState> parser() {
@@ -3582,14 +3575,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<FeederDelegation>
-        PARSER = new com.google.protobuf.AbstractParser<FeederDelegation>() {
-      @java.lang.Override
-      public FeederDelegation parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new FeederDelegation(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public FeederDelegation parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new FeederDelegation(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<FeederDelegation> parser() {
@@ -4231,14 +4224,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<MissCounter>
-        PARSER = new com.google.protobuf.AbstractParser<MissCounter>() {
-      @java.lang.Override
-      public MissCounter parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MissCounter(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MissCounter parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MissCounter(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MissCounter> parser() {
@@ -4959,14 +4952,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<TobinTax>
-        PARSER = new com.google.protobuf.AbstractParser<TobinTax>() {
-      @java.lang.Override
-      public TobinTax parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TobinTax(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public TobinTax parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new TobinTax(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<TobinTax> parser() {

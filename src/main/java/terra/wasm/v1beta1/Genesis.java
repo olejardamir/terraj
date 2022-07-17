@@ -170,7 +170,7 @@ public final class Genesis {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                codes_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Code>();
+                codes_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               codes_.add(
@@ -179,7 +179,7 @@ public final class Genesis {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                contracts_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Contract>();
+                contracts_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
               contracts_.add(
@@ -375,11 +375,11 @@ public final class Genesis {
       if (lastInstanceId_ != 0L) {
         output.writeUInt64(3, lastInstanceId_);
       }
-      for (int i = 0; i < codes_.size(); i++) {
-        output.writeMessage(4, codes_.get(i));
+      for (Code code : codes_) {
+        output.writeMessage(4, code);
       }
-      for (int i = 0; i < contracts_.size(); i++) {
-        output.writeMessage(5, contracts_.get(i));
+      for (Contract contract : contracts_) {
+        output.writeMessage(5, contract);
       }
       unknownFields.writeTo(output);
     }
@@ -402,13 +402,13 @@ public final class Genesis {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(3, lastInstanceId_);
       }
-      for (int i = 0; i < codes_.size(); i++) {
+      for (Code code : codes_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, codes_.get(i));
+                .computeMessageSize(4, code);
       }
-      for (int i = 0; i < contracts_.size(); i++) {
+      for (Contract contract : contracts_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, contracts_.get(i));
+                .computeMessageSize(5, contract);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -928,8 +928,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Wasm.Params, terra.wasm.v1beta1.Wasm.Params.Builder, terra.wasm.v1beta1.Wasm.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.wasm.v1beta1.Wasm.Params, terra.wasm.v1beta1.Wasm.Params.Builder, terra.wasm.v1beta1.Wasm.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -1004,7 +1003,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureCodesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          codes_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Code>(codes_);
+          codes_ = new java.util.ArrayList<>(codes_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -1229,8 +1228,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Genesis.Code, terra.wasm.v1beta1.Genesis.Code.Builder, terra.wasm.v1beta1.Genesis.CodeOrBuilder> 
           getCodesFieldBuilder() {
         if (codesBuilder_ == null) {
-          codesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.wasm.v1beta1.Genesis.Code, terra.wasm.v1beta1.Genesis.Code.Builder, terra.wasm.v1beta1.Genesis.CodeOrBuilder>(
+          codesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   codes_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1244,7 +1242,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureContractsIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          contracts_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Contract>(contracts_);
+          contracts_ = new java.util.ArrayList<>(contracts_);
           bitField0_ |= 0x00000002;
          }
       }
@@ -1469,8 +1467,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Genesis.Contract, terra.wasm.v1beta1.Genesis.Contract.Builder, terra.wasm.v1beta1.Genesis.ContractOrBuilder> 
           getContractsFieldBuilder() {
         if (contractsBuilder_ == null) {
-          contractsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.wasm.v1beta1.Genesis.Contract, terra.wasm.v1beta1.Genesis.Contract.Builder, terra.wasm.v1beta1.Genesis.ContractOrBuilder>(
+          contractsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   contracts_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -1506,12 +1503,12 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<GenesisState>
-        PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public GenesisState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new GenesisState(input, extensionRegistry);
       }
     };
@@ -2080,12 +2077,12 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<Model>
-        PARSER = new com.google.protobuf.AbstractParser<Model>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public Model parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new Model(input, extensionRegistry);
       }
     };
@@ -2713,8 +2710,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Wasm.CodeInfo, terra.wasm.v1beta1.Wasm.CodeInfo.Builder, terra.wasm.v1beta1.Wasm.CodeInfoOrBuilder> 
           getCodeInfoFieldBuilder() {
         if (codeInfoBuilder_ == null) {
-          codeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.wasm.v1beta1.Wasm.CodeInfo, terra.wasm.v1beta1.Wasm.CodeInfo.Builder, terra.wasm.v1beta1.Wasm.CodeInfoOrBuilder>(
+          codeInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getCodeInfo(),
                   getParentForChildren(),
                   isClean());
@@ -2783,12 +2779,12 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<Code>
-        PARSER = new com.google.protobuf.AbstractParser<Code>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public Code parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new Code(input, extensionRegistry);
       }
     };
@@ -2918,7 +2914,7 @@ public final class Genesis {
             }
             case 18: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                contractStore_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Model>();
+                contractStore_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               contractStore_.add(
@@ -3043,8 +3039,8 @@ public final class Genesis {
       if (contractInfo_ != null) {
         output.writeMessage(1, getContractInfo());
       }
-      for (int i = 0; i < contractStore_.size(); i++) {
-        output.writeMessage(2, contractStore_.get(i));
+      for (Model model : contractStore_) {
+        output.writeMessage(2, model);
       }
       unknownFields.writeTo(output);
     }
@@ -3059,9 +3055,9 @@ public final class Genesis {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getContractInfo());
       }
-      for (int i = 0; i < contractStore_.size(); i++) {
+      for (Model model : contractStore_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, contractStore_.get(i));
+                .computeMessageSize(2, model);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3511,8 +3507,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Wasm.ContractInfo, terra.wasm.v1beta1.Wasm.ContractInfo.Builder, terra.wasm.v1beta1.Wasm.ContractInfoOrBuilder> 
           getContractInfoFieldBuilder() {
         if (contractInfoBuilder_ == null) {
-          contractInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.wasm.v1beta1.Wasm.ContractInfo, terra.wasm.v1beta1.Wasm.ContractInfo.Builder, terra.wasm.v1beta1.Wasm.ContractInfoOrBuilder>(
+          contractInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getContractInfo(),
                   getParentForChildren(),
                   isClean());
@@ -3525,7 +3520,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureContractStoreIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          contractStore_ = new java.util.ArrayList<terra.wasm.v1beta1.Genesis.Model>(contractStore_);
+          contractStore_ = new java.util.ArrayList<>(contractStore_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -3750,8 +3745,7 @@ public final class Genesis {
           terra.wasm.v1beta1.Genesis.Model, terra.wasm.v1beta1.Genesis.Model.Builder, terra.wasm.v1beta1.Genesis.ModelOrBuilder> 
           getContractStoreFieldBuilder() {
         if (contractStoreBuilder_ == null) {
-          contractStoreBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.wasm.v1beta1.Genesis.Model, terra.wasm.v1beta1.Genesis.Model.Builder, terra.wasm.v1beta1.Genesis.ModelOrBuilder>(
+          contractStoreBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   contractStore_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -3787,12 +3781,12 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<Contract>
-        PARSER = new com.google.protobuf.AbstractParser<Contract>() {
+        PARSER = new com.google.protobuf.AbstractParser<>() {
       @java.lang.Override
       public Contract parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
+              com.google.protobuf.CodedInputStream input,
+              com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+              throws com.google.protobuf.InvalidProtocolBufferException {
         return new Contract(input, extensionRegistry);
       }
     };

@@ -866,14 +866,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgAggregateExchangeRatePrevote>
-        PARSER = new com.google.protobuf.AbstractParser<MsgAggregateExchangeRatePrevote>() {
-      @java.lang.Override
-      public MsgAggregateExchangeRatePrevote parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgAggregateExchangeRatePrevote(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgAggregateExchangeRatePrevote parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgAggregateExchangeRatePrevote(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgAggregateExchangeRatePrevote> parser() {
@@ -1292,14 +1292,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgAggregateExchangeRatePrevoteResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgAggregateExchangeRatePrevoteResponse>() {
-      @java.lang.Override
-      public MsgAggregateExchangeRatePrevoteResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgAggregateExchangeRatePrevoteResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgAggregateExchangeRatePrevoteResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgAggregateExchangeRatePrevoteResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgAggregateExchangeRatePrevoteResponse> parser() {
@@ -2320,14 +2320,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgAggregateExchangeRateVote>
-        PARSER = new com.google.protobuf.AbstractParser<MsgAggregateExchangeRateVote>() {
-      @java.lang.Override
-      public MsgAggregateExchangeRateVote parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgAggregateExchangeRateVote(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgAggregateExchangeRateVote parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgAggregateExchangeRateVote(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgAggregateExchangeRateVote> parser() {
@@ -2746,14 +2746,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgAggregateExchangeRateVoteResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgAggregateExchangeRateVoteResponse>() {
-      @java.lang.Override
-      public MsgAggregateExchangeRateVoteResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgAggregateExchangeRateVoteResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgAggregateExchangeRateVoteResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgAggregateExchangeRateVoteResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgAggregateExchangeRateVoteResponse> parser() {
@@ -3474,14 +3474,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgDelegateFeedConsent>
-        PARSER = new com.google.protobuf.AbstractParser<MsgDelegateFeedConsent>() {
-      @java.lang.Override
-      public MsgDelegateFeedConsent parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgDelegateFeedConsent(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgDelegateFeedConsent parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgDelegateFeedConsent(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgDelegateFeedConsent> parser() {
@@ -3900,14 +3900,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgDelegateFeedConsentResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgDelegateFeedConsentResponse>() {
-      @java.lang.Override
-      public MsgDelegateFeedConsentResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgDelegateFeedConsentResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgDelegateFeedConsentResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgDelegateFeedConsentResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgDelegateFeedConsentResponse> parser() {

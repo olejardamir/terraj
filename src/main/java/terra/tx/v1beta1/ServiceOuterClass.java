@@ -643,8 +643,7 @@ public final class ServiceOuterClass {
           cosmos.tx.v1beta1.TxOuterClass.Tx, cosmos.tx.v1beta1.TxOuterClass.Tx.Builder, cosmos.tx.v1beta1.TxOuterClass.TxOrBuilder> 
           getTxFieldBuilder() {
         if (txBuilder_ == null) {
-          txBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.tx.v1beta1.TxOuterClass.Tx, cosmos.tx.v1beta1.TxOuterClass.Tx.Builder, cosmos.tx.v1beta1.TxOuterClass.TxOrBuilder>(
+          txBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getTx(),
                   getParentForChildren(),
                   isClean());
@@ -679,14 +678,14 @@ public final class ServiceOuterClass {
     }
 
     private static final com.google.protobuf.Parser<ComputeTaxRequest>
-        PARSER = new com.google.protobuf.AbstractParser<ComputeTaxRequest>() {
-      @java.lang.Override
-      public ComputeTaxRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ComputeTaxRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public ComputeTaxRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ComputeTaxRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<ComputeTaxRequest> parser() {
@@ -807,7 +806,7 @@ public final class ServiceOuterClass {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                taxAmount_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                taxAmount_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               taxAmount_.add(
@@ -923,8 +922,8 @@ public final class ServiceOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < taxAmount_.size(); i++) {
-        output.writeMessage(1, taxAmount_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxAmount_) {
+        output.writeMessage(1, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -935,9 +934,9 @@ public final class ServiceOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < taxAmount_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxAmount_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, taxAmount_.get(i));
+                .computeMessageSize(1, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1260,7 +1259,7 @@ public final class ServiceOuterClass {
         java.util.Collections.emptyList();
       private void ensureTaxAmountIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          taxAmount_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(taxAmount_);
+          taxAmount_ = new java.util.ArrayList<>(taxAmount_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -1557,8 +1556,7 @@ public final class ServiceOuterClass {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getTaxAmountFieldBuilder() {
         if (taxAmountBuilder_ == null) {
-          taxAmountBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          taxAmountBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxAmount_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1594,14 +1592,14 @@ public final class ServiceOuterClass {
     }
 
     private static final com.google.protobuf.Parser<ComputeTaxResponse>
-        PARSER = new com.google.protobuf.AbstractParser<ComputeTaxResponse>() {
-      @java.lang.Override
-      public ComputeTaxResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new ComputeTaxResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public ComputeTaxResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new ComputeTaxResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<ComputeTaxResponse> parser() {

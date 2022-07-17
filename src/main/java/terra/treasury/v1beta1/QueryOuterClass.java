@@ -414,14 +414,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxRateRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxRateRequest>() {
-      @java.lang.Override
-      public QueryTaxRateRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxRateRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxRateRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxRateRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxRateRequest> parser() {
@@ -992,14 +992,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxRateResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxRateResponse>() {
-      @java.lang.Override
-      public QueryTaxRateResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxRateResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxRateResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxRateResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxRateResponse> parser() {
@@ -1604,14 +1604,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxCapRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxCapRequest>() {
-      @java.lang.Override
-      public QueryTaxCapRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxCapRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxCapRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxCapRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxCapRequest> parser() {
@@ -2182,14 +2182,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxCapResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxCapResponse>() {
-      @java.lang.Override
-      public QueryTaxCapResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxCapResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxCapResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxCapResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxCapResponse> parser() {
@@ -2608,14 +2608,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxCapsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxCapsRequest>() {
-      @java.lang.Override
-      public QueryTaxCapsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxCapsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxCapsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxCapsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxCapsRequest> parser() {
@@ -3336,14 +3336,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxCapsResponseItem>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxCapsResponseItem>() {
-      @java.lang.Override
-      public QueryTaxCapsResponseItem parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxCapsResponseItem(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxCapsResponseItem parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxCapsResponseItem(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxCapsResponseItem> parser() {
@@ -3444,7 +3444,7 @@ public final class QueryOuterClass {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                taxCaps_ = new java.util.ArrayList<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem>();
+                taxCaps_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               taxCaps_.add(
@@ -3540,8 +3540,8 @@ public final class QueryOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < taxCaps_.size(); i++) {
-        output.writeMessage(1, taxCaps_.get(i));
+      for (QueryTaxCapsResponseItem queryTaxCapsResponseItem : taxCaps_) {
+        output.writeMessage(1, queryTaxCapsResponseItem);
       }
       unknownFields.writeTo(output);
     }
@@ -3552,9 +3552,9 @@ public final class QueryOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < taxCaps_.size(); i++) {
+      for (QueryTaxCapsResponseItem queryTaxCapsResponseItem : taxCaps_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, taxCaps_.get(i));
+                .computeMessageSize(1, queryTaxCapsResponseItem);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3877,7 +3877,7 @@ public final class QueryOuterClass {
         java.util.Collections.emptyList();
       private void ensureTaxCapsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          taxCaps_ = new java.util.ArrayList<terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem>(taxCaps_);
+          taxCaps_ = new java.util.ArrayList<>(taxCaps_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -4102,8 +4102,7 @@ public final class QueryOuterClass {
           terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem.Builder, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItemOrBuilder> 
           getTaxCapsFieldBuilder() {
         if (taxCapsBuilder_ == null) {
-          taxCapsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItem.Builder, terra.treasury.v1beta1.QueryOuterClass.QueryTaxCapsResponseItemOrBuilder>(
+          taxCapsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxCaps_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -4139,14 +4138,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxCapsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxCapsResponse>() {
-      @java.lang.Override
-      public QueryTaxCapsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxCapsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxCapsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxCapsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxCapsResponse> parser() {
@@ -4565,14 +4564,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryRewardWeightRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryRewardWeightRequest>() {
-      @java.lang.Override
-      public QueryRewardWeightRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryRewardWeightRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryRewardWeightRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryRewardWeightRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryRewardWeightRequest> parser() {
@@ -5143,14 +5142,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryRewardWeightResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryRewardWeightResponse>() {
-      @java.lang.Override
-      public QueryRewardWeightResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryRewardWeightResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryRewardWeightResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryRewardWeightResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryRewardWeightResponse> parser() {
@@ -5569,14 +5568,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxProceedsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxProceedsRequest>() {
-      @java.lang.Override
-      public QueryTaxProceedsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxProceedsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxProceedsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxProceedsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxProceedsRequest> parser() {
@@ -5677,7 +5676,7 @@ public final class QueryOuterClass {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               taxProceeds_.add(
@@ -5773,8 +5772,8 @@ public final class QueryOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < taxProceeds_.size(); i++) {
-        output.writeMessage(1, taxProceeds_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxProceeds_) {
+        output.writeMessage(1, coin);
       }
       unknownFields.writeTo(output);
     }
@@ -5785,9 +5784,9 @@ public final class QueryOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < taxProceeds_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : taxProceeds_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, taxProceeds_.get(i));
+                .computeMessageSize(1, coin);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -6110,7 +6109,7 @@ public final class QueryOuterClass {
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(taxProceeds_);
+          taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -6335,8 +6334,7 @@ public final class QueryOuterClass {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getTaxProceedsFieldBuilder() {
         if (taxProceedsBuilder_ == null) {
-          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxProceeds_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -6372,14 +6370,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryTaxProceedsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryTaxProceedsResponse>() {
-      @java.lang.Override
-      public QueryTaxProceedsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryTaxProceedsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryTaxProceedsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryTaxProceedsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryTaxProceedsResponse> parser() {
@@ -6798,14 +6796,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QuerySeigniorageProceedsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QuerySeigniorageProceedsRequest>() {
-      @java.lang.Override
-      public QuerySeigniorageProceedsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QuerySeigniorageProceedsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QuerySeigniorageProceedsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QuerySeigniorageProceedsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QuerySeigniorageProceedsRequest> parser() {
@@ -7376,14 +7374,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QuerySeigniorageProceedsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QuerySeigniorageProceedsResponse>() {
-      @java.lang.Override
-      public QuerySeigniorageProceedsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QuerySeigniorageProceedsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QuerySeigniorageProceedsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QuerySeigniorageProceedsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QuerySeigniorageProceedsResponse> parser() {
@@ -7802,14 +7800,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryIndicatorsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryIndicatorsRequest>() {
-      @java.lang.Override
-      public QueryIndicatorsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryIndicatorsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryIndicatorsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryIndicatorsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryIndicatorsRequest> parser() {
@@ -8530,14 +8528,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryIndicatorsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryIndicatorsResponse>() {
-      @java.lang.Override
-      public QueryIndicatorsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryIndicatorsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryIndicatorsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryIndicatorsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryIndicatorsResponse> parser() {
@@ -8956,14 +8954,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryParamsRequest>
-        PARSER = new com.google.protobuf.AbstractParser<QueryParamsRequest>() {
-      @java.lang.Override
-      public QueryParamsRequest parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryParamsRequest(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryParamsRequest parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryParamsRequest(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryParamsRequest> parser() {
@@ -9609,8 +9607,7 @@ public final class QueryOuterClass {
           terra.treasury.v1beta1.Treasury.Params, terra.treasury.v1beta1.Treasury.Params.Builder, terra.treasury.v1beta1.Treasury.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.treasury.v1beta1.Treasury.Params, terra.treasury.v1beta1.Treasury.Params.Builder, terra.treasury.v1beta1.Treasury.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -9645,14 +9642,14 @@ public final class QueryOuterClass {
     }
 
     private static final com.google.protobuf.Parser<QueryParamsResponse>
-        PARSER = new com.google.protobuf.AbstractParser<QueryParamsResponse>() {
-      @java.lang.Override
-      public QueryParamsResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new QueryParamsResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public QueryParamsResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new QueryParamsResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<QueryParamsResponse> parser() {

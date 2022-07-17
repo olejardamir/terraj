@@ -236,7 +236,7 @@ public final class Genesis {
             }
             case 34: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                taxCaps_ = new java.util.ArrayList<terra.treasury.v1beta1.Genesis.TaxCap>();
+                taxCaps_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000001;
               }
               taxCaps_.add(
@@ -245,7 +245,7 @@ public final class Genesis {
             }
             case 42: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                taxProceeds_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000002;
               }
               taxProceeds_.add(
@@ -254,7 +254,7 @@ public final class Genesis {
             }
             case 50: {
               if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                epochInitialIssuance_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>();
+                epochInitialIssuance_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000004;
               }
               epochInitialIssuance_.add(
@@ -263,7 +263,7 @@ public final class Genesis {
             }
             case 58: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                epochStates_ = new java.util.ArrayList<terra.treasury.v1beta1.Genesis.EpochState>();
+                epochStates_ = new java.util.ArrayList<>();
                 mutable_bitField0_ |= 0x00000008;
               }
               epochStates_.add(
@@ -599,17 +599,17 @@ public final class Genesis {
       if (!getRewardWeightBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, rewardWeight_);
       }
-      for (int i = 0; i < taxCaps_.size(); i++) {
-        output.writeMessage(4, taxCaps_.get(i));
+      for (TaxCap taxCap : taxCaps_) {
+        output.writeMessage(4, taxCap);
       }
-      for (int i = 0; i < taxProceeds_.size(); i++) {
-        output.writeMessage(5, taxProceeds_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin value : taxProceeds_) {
+        output.writeMessage(5, value);
       }
-      for (int i = 0; i < epochInitialIssuance_.size(); i++) {
-        output.writeMessage(6, epochInitialIssuance_.get(i));
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : epochInitialIssuance_) {
+        output.writeMessage(6, coin);
       }
-      for (int i = 0; i < epochStates_.size(); i++) {
-        output.writeMessage(7, epochStates_.get(i));
+      for (EpochState epochState : epochStates_) {
+        output.writeMessage(7, epochState);
       }
       unknownFields.writeTo(output);
     }
@@ -630,21 +630,21 @@ public final class Genesis {
       if (!getRewardWeightBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, rewardWeight_);
       }
-      for (int i = 0; i < taxCaps_.size(); i++) {
+      for (TaxCap taxCap : taxCaps_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, taxCaps_.get(i));
+                .computeMessageSize(4, taxCap);
       }
-      for (int i = 0; i < taxProceeds_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin value : taxProceeds_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, taxProceeds_.get(i));
+                .computeMessageSize(5, value);
       }
-      for (int i = 0; i < epochInitialIssuance_.size(); i++) {
+      for (cosmos.base.v1beta1.CoinOuterClass.Coin coin : epochInitialIssuance_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(6, epochInitialIssuance_.get(i));
+                .computeMessageSize(6, coin);
       }
-      for (int i = 0; i < epochStates_.size(); i++) {
+      for (EpochState epochState : epochStates_) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, epochStates_.get(i));
+                .computeMessageSize(7, epochState);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1260,8 +1260,7 @@ public final class Genesis {
           terra.treasury.v1beta1.Treasury.Params, terra.treasury.v1beta1.Treasury.Params.Builder, terra.treasury.v1beta1.Treasury.ParamsOrBuilder> 
           getParamsFieldBuilder() {
         if (paramsBuilder_ == null) {
-          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              terra.treasury.v1beta1.Treasury.Params, terra.treasury.v1beta1.Treasury.Params.Builder, terra.treasury.v1beta1.Treasury.ParamsOrBuilder>(
+          paramsBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getParams(),
                   getParentForChildren(),
                   isClean());
@@ -1426,7 +1425,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureTaxCapsIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          taxCaps_ = new java.util.ArrayList<terra.treasury.v1beta1.Genesis.TaxCap>(taxCaps_);
+          taxCaps_ = new java.util.ArrayList<>(taxCaps_);
           bitField0_ |= 0x00000001;
          }
       }
@@ -1651,8 +1650,7 @@ public final class Genesis {
           terra.treasury.v1beta1.Genesis.TaxCap, terra.treasury.v1beta1.Genesis.TaxCap.Builder, terra.treasury.v1beta1.Genesis.TaxCapOrBuilder> 
           getTaxCapsFieldBuilder() {
         if (taxCapsBuilder_ == null) {
-          taxCapsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.treasury.v1beta1.Genesis.TaxCap, terra.treasury.v1beta1.Genesis.TaxCap.Builder, terra.treasury.v1beta1.Genesis.TaxCapOrBuilder>(
+          taxCapsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxCaps_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
@@ -1666,7 +1664,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureTaxProceedsIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          taxProceeds_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(taxProceeds_);
+          taxProceeds_ = new java.util.ArrayList<>(taxProceeds_);
           bitField0_ |= 0x00000002;
          }
       }
@@ -1891,8 +1889,7 @@ public final class Genesis {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getTaxProceedsFieldBuilder() {
         if (taxProceedsBuilder_ == null) {
-          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          taxProceedsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   taxProceeds_,
                   ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
@@ -1906,7 +1903,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureEpochInitialIssuanceIsMutable() {
         if (!((bitField0_ & 0x00000004) != 0)) {
-          epochInitialIssuance_ = new java.util.ArrayList<cosmos.base.v1beta1.CoinOuterClass.Coin>(epochInitialIssuance_);
+          epochInitialIssuance_ = new java.util.ArrayList<>(epochInitialIssuance_);
           bitField0_ |= 0x00000004;
          }
       }
@@ -2131,8 +2128,7 @@ public final class Genesis {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getEpochInitialIssuanceFieldBuilder() {
         if (epochInitialIssuanceBuilder_ == null) {
-          epochInitialIssuanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          epochInitialIssuanceBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   epochInitialIssuance_,
                   ((bitField0_ & 0x00000004) != 0),
                   getParentForChildren(),
@@ -2146,7 +2142,7 @@ public final class Genesis {
         java.util.Collections.emptyList();
       private void ensureEpochStatesIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          epochStates_ = new java.util.ArrayList<terra.treasury.v1beta1.Genesis.EpochState>(epochStates_);
+          epochStates_ = new java.util.ArrayList<>(epochStates_);
           bitField0_ |= 0x00000008;
          }
       }
@@ -2371,8 +2367,7 @@ public final class Genesis {
           terra.treasury.v1beta1.Genesis.EpochState, terra.treasury.v1beta1.Genesis.EpochState.Builder, terra.treasury.v1beta1.Genesis.EpochStateOrBuilder> 
           getEpochStatesFieldBuilder() {
         if (epochStatesBuilder_ == null) {
-          epochStatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              terra.treasury.v1beta1.Genesis.EpochState, terra.treasury.v1beta1.Genesis.EpochState.Builder, terra.treasury.v1beta1.Genesis.EpochStateOrBuilder>(
+          epochStatesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<>(
                   epochStates_,
                   ((bitField0_ & 0x00000008) != 0),
                   getParentForChildren(),
@@ -2408,14 +2403,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<GenesisState>
-        PARSER = new com.google.protobuf.AbstractParser<GenesisState>() {
-      @java.lang.Override
-      public GenesisState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new GenesisState(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public GenesisState parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new GenesisState(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<GenesisState> parser() {
@@ -3134,14 +3129,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<TaxCap>
-        PARSER = new com.google.protobuf.AbstractParser<TaxCap>() {
-      @java.lang.Override
-      public TaxCap parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TaxCap(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public TaxCap parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new TaxCap(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<TaxCap> parser() {
@@ -4081,14 +4076,14 @@ public final class Genesis {
     }
 
     private static final com.google.protobuf.Parser<EpochState>
-        PARSER = new com.google.protobuf.AbstractParser<EpochState>() {
-      @java.lang.Override
-      public EpochState parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EpochState(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public EpochState parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new EpochState(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<EpochState> parser() {

@@ -805,8 +805,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getOfferCoinFieldBuilder() {
         if (offerCoinBuilder_ == null) {
-          offerCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          offerCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getOfferCoin(),
                   getParentForChildren(),
                   isClean());
@@ -917,14 +916,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgSwap>
-        PARSER = new com.google.protobuf.AbstractParser<MsgSwap>() {
-      @java.lang.Override
-      public MsgSwap parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgSwap(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgSwap parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgSwap(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgSwap> parser() {
@@ -1594,8 +1593,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getSwapCoinFieldBuilder() {
         if (swapCoinBuilder_ == null) {
-          swapCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          swapCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getSwapCoin(),
                   getParentForChildren(),
                   isClean());
@@ -1713,8 +1711,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getSwapFeeFieldBuilder() {
         if (swapFeeBuilder_ == null) {
-          swapFeeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          swapFeeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getSwapFee(),
                   getParentForChildren(),
                   isClean());
@@ -1749,14 +1746,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgSwapResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgSwapResponse>() {
-      @java.lang.Override
-      public MsgSwapResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgSwapResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgSwapResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgSwapResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgSwapResponse> parser() {
@@ -2716,8 +2713,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getOfferCoinFieldBuilder() {
         if (offerCoinBuilder_ == null) {
-          offerCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          offerCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getOfferCoin(),
                   getParentForChildren(),
                   isClean());
@@ -2828,14 +2824,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgSwapSend>
-        PARSER = new com.google.protobuf.AbstractParser<MsgSwapSend>() {
-      @java.lang.Override
-      public MsgSwapSend parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgSwapSend(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgSwapSend parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgSwapSend(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgSwapSend> parser() {
@@ -3505,8 +3501,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getSwapCoinFieldBuilder() {
         if (swapCoinBuilder_ == null) {
-          swapCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          swapCoinBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getSwapCoin(),
                   getParentForChildren(),
                   isClean());
@@ -3624,8 +3619,7 @@ public final class Tx {
           cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
           getSwapFeeFieldBuilder() {
         if (swapFeeBuilder_ == null) {
-          swapFeeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              cosmos.base.v1beta1.CoinOuterClass.Coin, cosmos.base.v1beta1.CoinOuterClass.Coin.Builder, cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder>(
+          swapFeeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<>(
                   getSwapFee(),
                   getParentForChildren(),
                   isClean());
@@ -3660,14 +3654,14 @@ public final class Tx {
     }
 
     private static final com.google.protobuf.Parser<MsgSwapSendResponse>
-        PARSER = new com.google.protobuf.AbstractParser<MsgSwapSendResponse>() {
-      @java.lang.Override
-      public MsgSwapSendResponse parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new MsgSwapSendResponse(input, extensionRegistry);
-      }
+        PARSER = new com.google.protobuf.AbstractParser<>() {
+        @java.lang.Override
+        public MsgSwapSendResponse parsePartialFrom(
+                com.google.protobuf.CodedInputStream input,
+                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                throws com.google.protobuf.InvalidProtocolBufferException {
+            return new MsgSwapSendResponse(input, extensionRegistry);
+        }
     };
 
     public static com.google.protobuf.Parser<MsgSwapSendResponse> parser() {
